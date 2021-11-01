@@ -1,0 +1,346 @@
+/* header classes */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+/* .logo {
+} */
+.logo-img {
+  width: 98px;
+  margin-left: -16px;
+}
+
+.header-links {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 24px;
+}
+
+/* Searching classes */
+/* .search-box */
+
+.searching-text {
+  display: flex;
+  flex-direction: column;
+}
+.search-container {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  height: 64px;
+
+  border-radius: 12px 0 0 12px;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+.search-icon {
+  background-color: #f2f2f2;
+  align-self: center;
+  justify-self: stretch;
+  color: black;
+  border-radius: 12px 0 0 12px;
+  padding: 12px;
+}
+.search-form {
+  box-sizing: border-box;
+  font-weight: 700;
+  padding: 10px 16px;
+}
+.border-removed-input {
+  border: 0;
+  padding: 12px;
+}
+input[type="text"] {
+  box-sizing: border-box;
+  font-size: 16px;
+  padding: 12px 4px;
+  margin: 8px 0;
+}
+
+.search-sub-btn {
+  background-color: #0065fc;
+  border: none;
+  color: #fff;
+  font-weight: 700;
+  padding: 10px 16px;
+  text-align: center;
+  overflow: hidden;
+
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 0 12px 12px 0;
+}
+/* Filters section */
+.search--box {
+  display: flex;
+  /* flex-direction: column; */
+  gap: 16px;
+  align-items: center;
+  justify-content: stretch;
+  height: 48px;
+  font-weight: 700;
+  margin-bottom: 32px;
+}
+.border--box {
+  border-style: solid;
+  border-width: 1px;
+  border-color: #d4d4d4;
+  /* border-color: blue; */
+  padding-right: 8px;
+  border-radius: 16px;
+}
+
+.filter-icons {
+  background-color: #deebff;
+  color: #0065fc;
+  padding: 12px;
+  align-self: stretch;
+  border-radius: 16px;
+}
+/* .filter-text .low-cost .family-friendly .romantic .pets-allowed; */
+
+/* Search info */
+/* .search-info {
+  width: 50%;
+} */
+.search-info {
+  display: flex;
+}
+
+.search-info--icon {
+  justify-self: start;
+  align-self: flex-start;
+  size: 2px;
+  padding: 8px;
+  color: #0065fc;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #a9a9a9;
+  border-radius: 50%;
+}
+.search-info--text {
+  display: inline-block;
+  padding-top: 8px;
+  margin-left: 12px;
+  font-size: 18px;
+  margin-bottom: 16px;
+}
+/* Accommodations in Marsellie */
+
+/* 
+accommodations-box
+accommodations
+accommodations-gallery
+accommodations-gallery-title
+accommodations-most-popular */
+
+.accommodations-box {
+  display: flex;
+  column-gap: 32px;
+  width: 100%;
+  align-content: center;
+  justify-content: center;
+}
+.accommodations {
+  display: flex;
+  flex-direction: column;
+
+  padding: 48px 48px;
+  background-color: #f2f2f2;
+  border-radius: 24px;
+}
+.accommodations-gallery {
+  display: inline-flex;
+  justify-items:flex-start;
+  align-content:flex-start;
+  flex-wrap: wrap;
+  gap: 24px;
+  
+
+}
+.acommodations-augerge-la-cannebiere{
+  /* margin-bottom: 24px; */
+}
+.accommodations-gallery-title {
+  font-size: 18px;
+  padding: 0 0 24px 0;
+}
+.accommodations-gallery-item {
+
+  width: 33.333%;
+  height: 50%;
+
+  justify-self: start;
+  align-self: baseline;
+  flex: 1 1 25%;
+
+  background-color: white;
+  border-radius: 16px;
+  /* overflow: hidden; */
+  padding: 4 4 4 4;
+  /* box-shadow: 8px 8px #f2f2f2; */
+  box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.25);
+  /* margin-right: 12px; */
+}
+.acommodations-imgs {
+  width: 33.333%;
+  height: 66.666%;
+
+  max-height: 100%;
+  min-width: 100%;
+  object-fit: cover;
+  /* vertical-align: bottom; */
+  
+  /* 
+  background-position: center;
+  overflow: hidden;
+  object-fit: cover;
+  object-position: center; */
+
+
+
+  padding: 4px 4px 12px 4px;
+  border-radius: 16px 16px 0 0;
+}
+.acommodations-augerge-la-cannebiere-img{
+  /* max-height: 100%;
+  min-width: 100%;
+  object-fit: cover;
+  vertical-align: bottom; */
+}
+.acommodations-hotel-du-port-img
+.acommodations-les-mouettes-hotel-img
+.acommodations-hotel-de-la-mer-img
+.acommodations--auberge-le-panier-img{
+  /* max-height: 100%;
+  min-width: 100%;
+  object-fit: cover;
+  vertical-align: bottom; */
+}
+.acommodations-hotel-chez-aminna-img{
+  /* max-height: 100%;
+  min-width: 100%;
+  object-fit: cover;
+  vertical-align: bottom; */
+}
+
+.accommodations-gallery--padding-left {
+  padding-left: 16px;
+}
+.accommodations-gallery--text {
+  display: inline-block;
+  line-height: 1.5;
+  font-size: 18px;
+
+ 
+}
+.accommodations-gallery--stars {
+
+}
+.accommodations-gallery--star {
+  color: #0065fc;
+}
+.accommodations-gallery--nostar {
+  color: #f2f2f2;
+}
+.accommodations--show-more {
+  /* background-color: springgreen; */
+  padding: 48px 0 0 0;
+  font-size: 18px;
+}
+
+/* Most popular section */
+.accommodations-most-popular {
+  display: flex;
+  flex-direction: column;
+  background-color: #f2f2f2;
+  padding: 48px 48px 0 48px;
+  border-radius: 16px;
+  box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.25);
+}
+.most-popular--title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 0 32px 0;
+  font-size: 18px;
+}
+.most-popular-icon {
+  /* float: right; */
+}
+.most-popular-items {
+}
+.most-popular-item {
+  display: flex;
+  margin-bottom: 32px;
+  padding: 4px;
+  border-radius: 16px;
+  background-color: #fff;
+
+  /* flex-direction: column; */
+}
+.more-popular--img {
+  width: 150px;
+  height: 150px;
+  background-position: center;
+  overflow: hidden;
+  object-fit: fill;
+  object-position: 50% 50%;
+  border-radius: 12px 0 0 12px;
+}
+.more-popular-morning-sun-hotel-img {
+  width: 200px;
+  height: 200px;
+  background-position: center;
+  overflow: hidden;
+  object-fit: cover;
+  object-position: 50% 50%;
+  border-radius: 12px 0 0 12px;
+}
+.more-popular-bed-and-breakfast-img {
+  height: auto;
+  width: auto;
+  max-width: 200px;
+  height: 200px;
+  background-position: center;
+  overflow: hidden;
+  object-fit: cover;
+  object-position: 50% 50%;
+  border-radius: 12px 0 0 12px;
+}
+.more-popular-blanc-hotel-img {
+  height: 200px;
+  width: 200px;
+  /* max-width: 150px; */
+  /* max-height: 150px; */
+  /* overflow: hidden; */
+  object-fit: cover;
+  object-position: left bottom;
+  /* object-position: 20% 10%; */
+  /* background-position: left bottom; */
+  border-radius: 16px 0 0 16px;
+}
+.most-popular-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 18px;
+  padding: 12px 12px;
+}
+/* Activities in Marseille */
+.activities-in-marseille-box {
+
+}
+.activities-galery-box{
+  display: flex;
+justify-content: space-between;
+}
+.activities-galery-img{
+  /* display: inline-block; */
+  width: 100%;
+  height: 100px;
+}
