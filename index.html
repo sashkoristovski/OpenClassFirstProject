@@ -20,9 +20,9 @@
       rel="stylesheet"
     />
     <!-- CSS links -->
-    <!-- <link rel="stylesheet" href="css/normalize.css" /> -->
     <link rel="stylesheet" href="css/general.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/mediaqueries.css" />
     <!-- Script for icons  -->
     <script
       src="https://kit.fontawesome.com/c5154a734b.js"
@@ -31,7 +31,10 @@
 
     <title>Booki</title>
   </head>
-  <body class="container">
+  <body>
+    
+  
+  <main class="container">
     <!-- Header box -->
     <header class="header">
       <div class="logo">
@@ -42,8 +45,8 @@
         />
       </div>
       <nav class="header-links">
-        <a href="#" class="btn accomodations"> Accommodations</a>
-        <a href="#" class="btn activities">Activities </a>
+        <a href="#anchor-accomodations" class="btn header-link-accomodations"> Accommodations</a>
+        <a href="#anchor-activities" class="btn header-link-activities">Activities </a>
       </nav>
     </header>
     <!-- Searching section -->
@@ -102,55 +105,45 @@
       <div class="accommodations">
         <div class="accommodations-gallery-title">
           <!-- <strong>Accommodations in Marseille</strong> -->
-          <h1>Accommodations in Marseille</h1>
+          
+          <h1 id="anchor-accomodations">Accommodations in Marseille</h1>
         </div>
         <div class="accommodations-gallery">
+
+
             <!-- Augerge la cannebiere -->
-            <div class="accommodations-gallery-item acommodations-augerge-la-cannebiere">
+            <a href="#" class="clickable-link accommodations-gallery-item">
               <img
                 src="images/hebergements/1_xlarge/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
                 alt="Room of Augerge la cannebiere hotel"
-                class="acommodations-imgs acommodations-augerge-la-cannebiere-img"
+                class="acommodations-imgs"
               />
-              <!-- srcset="
-            images/hebergements/1_xlarge/marcus-loke-WQJvWU_HZFo-unsplash.jpg,images/hebergements/2_large/marcus-loke-WQJvWU_HZFo-unsplash.jpg,images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg,images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg
-          " -->
-
-              <span
-                class="
-                  accommodations-gallery--text
-                  accommodations-gallery--padding-left
-                "
-                ><strong>Augerge la Cannebi&egrave;re </strong><br />
-                Night starting at <strong>25&euro;</strong>
-              </span>
-              <div class="accommodations-gallery--padding-left">
+              <div class="accommodations-gallery--text">
+                <h2>Augerge la Cannebi&egrave;re</h2>
+              <p>Night starting at <strong>25&euro;</strong></p>
+              <div>
+                <i class="accommodations-gallery--star fas fa-star"></i>
                 <i class="accommodations-gallery--star fas fa-star"></i>
                 <i class="accommodations-gallery--star fas fa-star"></i>
                 <i class="accommodations-gallery--star fas fa-star"></i>
                 <i class="accommodations-gallery--nostar fas fa-star"></i>
               </div>
             </div>
+        </a>
             <!-- <div>hotel-du-port</div> -->
-            <div class="accommodations-gallery-item">
+
+
+            <a href="#" class="clickable-link accommodations-gallery-item">
               <img
                 src="images/hebergements/1_xlarge/fred-kleber-gTbaxaVLvsg-unsplash.jpg"
                 alt="room of hotel du port"
                 class="acommodations-imgs"
               />
-              <!-- srcset="
-            images/hebergements/1_xlarge/marcus-loke-WQJvWU_HZFo-unsplash.jpg,images/hebergements/2_large/marcus-loke-WQJvWU_HZFo-unsplash.jpg,images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg,images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg
-          " -->
-
-              <span
-                class="
-                  accommodations-gallery--text
-                  accommodations-gallery--padding-left
-                "
-                ><strong>H&ocirc;tel du port </strong><br />
-                Night starting at <strong>52&euro;</strong>
-              </span>
-              <div class="accommodations-gallery--padding-left">
+              <div class="accommodations-gallery--text">
+                <h2>H&ocirc;tel du port</h2>
+                 <p> Night starting at <strong>52&euro;</strong>
+                 </p>
+                <div>
                 <i class="accommodations-gallery--star fas fa-star"></i>
                 <i class="accommodations-gallery--star fas fa-star"></i>
                 <i class="accommodations-gallery--star fas fa-star"></i>
@@ -158,28 +151,22 @@
                 <i class="accommodations-gallery--star fas fa-star"></i>
               </div>
             </div>
+        </a>
 
             <!-- <div>les-mouettes-hotel</div> -->
 
-            <div class="accommodations-gallery-item">
+            <a href="#" class="clickable-link accommodations-gallery-item">
               <img
                 src="images/hebergements/1_xlarge/reisetopia-B8WIgxA_PFU-unsplash.jpg"
                 alt="Room of les mouettes hotel"
                 class="acommodations-imgs acommodations-hotel-du-port-img"
               />
-              <!-- srcset="
-            images/hebergements/1_xlarge/marcus-loke-WQJvWU_HZFo-unsplash.jpg,images/hebergements/2_large/marcus-loke-WQJvWU_HZFo-unsplash.jpg,images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg,images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg
-          " -->
-
-              <span
-                class="
-                  accommodations-gallery--text
-                  accommodations-gallery--padding-left
-                "
-                ><strong>Les mouettes Hotel </strong><br />
+              <div class="accommodations-gallery--text">
+                <h2>Les mouettes Hotel</h2>
+                <p> 
                 Night starting at <strong>76&euro;</strong>
-              </span>
-              <div class="accommodations-gallery--padding-left">
+              </p>
+              <div>
                 <i class="accommodations-gallery--star fas fa-star"></i>
                 <i class="accommodations-gallery--star fas fa-star"></i>
                 <i class="accommodations-gallery--star fas fa-star"></i>
@@ -187,29 +174,24 @@
                 <i class="accommodations-gallery--nostar fas fa-star"></i>
               </div>
             </div>
-          <!-- </div> -->
+        </a>
 
           <!-- <div>hotel-de-la-mer</div> -->
 
-          <div class="accommodations-gallery-item">
+          <a href="#" class="clickable-link accommodations-gallery-item">
             <img
               src="images/hebergements/1_xlarge/annie-spratt-Eg1qcIitAuA-unsplash.jpg"
               alt="Room of hotel de la mer"
               class="acommodations-imgs acommodations-hotel-de-la-mer-img"
             />
-            <!-- srcset="
-            images/hebergements/1_xlarge/marcus-loke-WQJvWU_HZFo-unsplash.jpg,images/hebergements/2_large/marcus-loke-WQJvWU_HZFo-unsplash.jpg,images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg,images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg
-          " -->
 
-            <span
-              class="
-                accommodations-gallery--text
-                accommodations-gallery--padding-left
-              "
-              ><strong>H&ocirc;tel se la mer </strong><br />
-              Night starting at <strong>46&euro;</strong>
-            </span>
-            <div class="accommodations-gallery--padding-left">
+            
+            <div class="accommodations-gallery--text">
+              <h2>H&ocirc;tel se la mer</h2>
+              <p>
+                Night starting at <strong>46&euro;</strong>
+              </p>
+              <div>
               <i class="accommodations-gallery--star fas fa-star"></i>
               <i class="accommodations-gallery--star fas fa-star"></i>
               <i class="accommodations-gallery--star fas fa-star"></i>
@@ -217,27 +199,22 @@
               <i class="accommodations-gallery--nostar fas fa-star"></i>
             </div>
           </div>
+      </a>
           <!-- <div>auberge-le-panier</div> -->
 
-          <div class="accommodations-gallery-item">
+          <a href="#" class="clickable-link accommodations-gallery-item">
             <img
               src="images/hebergements/1_xlarge/nicate-lee-kT-ZyaiwBe0-unsplash.jpg"
               alt="Roo of Augerge Le Panier hotel"
               class="acommodations-imgs acommodations--auberge-le-panier-img"
             />
-            <!-- srcset="
-            images/hebergements/1_xlarge/marcus-loke-WQJvWU_HZFo-unsplash.jpg,images/hebergements/2_large/marcus-loke-WQJvWU_HZFo-unsplash.jpg,images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg,images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg
-          " -->
 
-            <span
-              class="
-                accommodations-gallery--text
-                accommodations-gallery--padding-left
-              "
-              ><strong>Augerge Le Panier </strong><br />
-              Night starting at <strong>23&euro;</strong>
-            </span>
-            <div class="accommodations-gallery--padding-left">
+            <div class="accommodations-gallery--text">
+              <h2>Augerge Le Panier</h2>
+              <p>
+                Night starting at <strong>23&euro;</strong>
+              </p>
+              <div>
               <i class="accommodations-gallery--star fas fa-star"></i>
               <i class="accommodations-gallery--star fas fa-star"></i>
               <i class="accommodations-gallery--star fas fa-star"></i>
@@ -245,27 +222,22 @@
               <i class="accommodations-gallery--nostar fas fa-star"></i>
             </div>
           </div>
+      </a>
           <!-- <div>hotel-chez-aminna</div> -->
 
-          <div class="accommodations-gallery-item">
+          <a href="#" class="clickable-link accommodations-gallery-item">
             <img
               src="images/hebergements/1_xlarge/febrian-zakaria-M6S1WvfW68A-unsplash.jpg"
               alt="Room of hotel chez aminna"
               class="acommodations-imgs acommodations-hotel-chez-aminna-img"
             />
-            <!-- srcset="
-            images/hebergements/1_xlarge/marcus-loke-WQJvWU_HZFo-unsplash.jpg,images/hebergements/2_large/marcus-loke-WQJvWU_HZFo-unsplash.jpg,images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg,images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg
-          " -->
-
-            <span
-              class="
-                accommodations-gallery--text
-                accommodations-gallery--padding-left
-              "
-              ><strong>H&ocirc;tel du port </strong><br />
-              Night starting at <strong>52&euro;</strong>
-            </span>
-            <div class="accommodations-gallery--padding-left">
+            
+            <div class=" accommodations-gallery--text">
+              <h2>H&ocirc;tel chez Amina</h2>
+              <p>
+                Night starting at <strong>96&euro;</strong>
+              </p>
+              <DIV>
               <i class="accommodations-gallery--star fas fa-star"></i>
               <i class="accommodations-gallery--star fas fa-star"></i>
               <i class="accommodations-gallery--star fas fa-star"></i>
@@ -273,35 +245,37 @@
               <i class="accommodations-gallery--star fas fa-star"></i>
             </div>
           </div>
-        </div>
-
-        <div class="accommodations--show-more"><strong>Show more</strong></div>
+      </a>
+      
+        <div class="accommodations--show-more"><h2>Show more</h2></div>
       </div>
+    </div>  <!-- End of gallery -->
 
       <!-- accommodations most popular section -->
 
       <div class="accommodations-most-popular">
         <!-- most-popular--title -->
+      
         <div class="most-popular--title">
           <!-- <strong>Most Popular</strong> -->
           <h1>Most Popular</h1>
           <i class="most-popular-icon fas fa-chart-line"></i>
         </div>
         <!-- Box of popular hotels -->
-        <div class="most-popular-items">
+        <a href="#" class="most-popular-items clickable-link">
           <!-- morning-sun-hotel -->
           <div class="most-popular-item">
             <img
               src="images/hebergements/1_xlarge/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
               alt="Room of morning sun hotel"
               srcset=""
-              class="more-popular-morning-sun-hotel-img"
+              class="more-popular-img"
             />
             <!-- Most popular descriptions -->
             <div class="most-popular-details">
-              <p><strong>Morning Sun Hotel</strong></p>
+              <h2>Morning Sun Hotel</h2>
               <p>Night starting at <strong>128&euro;</strong></p>
-              <div>
+              <div class="accommodations-gallery--stars">
                 <i class="accommodations-gallery--star fas fa-star"></i>
                 <i class="accommodations-gallery--star fas fa-star"></i>
                 <i class="accommodations-gallery--star fas fa-star"></i>
@@ -311,23 +285,23 @@
             </div>
             <!-- end of most popular details -->
           </div>
+        </a>
           <!-- end of morning-sun-hotel -->
 
           <!-- au-coeur de l'eau bed and breakfast -->
+          <a href="#" class="clickable-link most-popular-items">
           <div class="most-popular-item">
             <img
               src="images/hebergements/1_xlarge/aw-creative-VGs8z60yT2c-unsplash.jpg"
               alt="Room of Au c&oelig;ur de l'eau Bed and Breakfast hotel 	"
               srcset=""
-              class="more-popular-bed-and-breakfast-img"
+              class="more-popular-img"
             />
             <!-- Most popular descriptions -->
             <div class="most-popular-details">
-              <p>
-                <strong>Au c&oelig;ur de l'eau Bed <br />and Breakfast</strong>
-              </p>
+              <h2>Au c&oelig;ur de l'eau Bed <br />and Breakfast</h2>
               <p>Night starting at <strong>71&euro;</strong></p>
-              <div>
+              <div class="accommodations-gallery--stars">
                 <i class="accommodations-gallery--star fas fa-star"></i>
                 <i class="accommodations-gallery--star fas fa-star"></i>
                 <i class="accommodations-gallery--star fas fa-star"></i>
@@ -337,21 +311,23 @@
             </div>
             <!-- end of most popular details -->
           </div>
+          </a>
           <!-- end of au-coeur de l'eau bed and breakfast  -->
 
           <!-- tout-bleu-et-blanc-hotel -->
+          <a href="#" class="clickable-link most-popular-items">
           <div class="most-popular-item">
             <img
               src="images/hebergements/1_xlarge/febrian-zakaria-sjvU0THccQA-unsplash.jpg"
               alt="Room of Tout bleu et Blanc Hotel"
               srcset=""
-              class="more-popular-blanc-hotel-img"
+              class="more-popular-img"
             />
             <!-- Most popular descriptions -->
             <div class="most-popular-details">
-              <p><strong>Tout bleu et Blanc Hotel</strong></p>
+              <h2>Tout bleu et Blanc <br /> Hotel</h2>
               <p>Night starting at <strong>68&euro;</strong></p>
-              <div>
+              <div class="accommodations-gallery--stars">
                 <i class="accommodations-gallery--star fas fa-star"></i>
                 <i class="accommodations-gallery--star fas fa-star"></i>
                 <i class="accommodations-gallery--star fas fa-star"></i>
@@ -361,66 +337,112 @@
             </div>
             <!-- end of most popular details -->
           </div>
+        </a>
           <!-- end of tout-bleu-et-blanc-hotel -->
         </div>
         <!-- end of most of popular hotels box -->
       </div>
       <!-- accommodations-most-popular end-->
     </section>
+
+
     <!-- Activities in Marseille section -->
-    <section class="activities-in-marseille-box">
-      <h2>Activities in Marseille</h2>
-      <div class="activities-galery-box">
-        <div class=" old-port">
-          <img
-            src="images/activites/1_xlarge/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
-            alt=""
-            srcset=""
-            class="activities-galery-img"
-          />
-        </div>
-        <div class="pomegues-fort">
-          <img
-            src="images/activites/1_xlarge/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
-            alt=""
-            srcset=""
-            class="activities-galery-img"
-          />
-        </div>
-        <div class="frioul-island">
-          <img
-            src="images/activites/1_xlarge/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"
-            alt=""
-            srcset=""
-            class="activities-galery-img"
-          />
-        </div>
-        <div class="calanques-national-park">
-          <img
-            src="images/activites/1_xlarge/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
-            alt=""
-            srcset=""
-            class="activities-galery-img"
-          />
-        </div>
-        <div class=" notre-dame-de-la-garde">
-          <img
-            src="images/activites/1_xlarge/florian-wehde-xW9e8gdotxI-unsplash.jpg"
-            alt=""
-            srcset=""
-            class="activities-galery-img"
-          />
-        </div>
-        <div class=" longchamp-park">
-          <img
-            src="images/activites/1_xlarge/lena-paulin-wH2-EJoDcV0-unsplash.jpg"
-            alt=""
-            srcset=""
-            class="activities-galery-img"
-          />
-        </div>
+    <section class="activities-in-marseille-section">
+      <div class="activities-in-marseille-title" >
+        <h1 id="anchor-activities">Activities in Marseille</h1>
       </div>
-    </div> <!-- end of activities-galery-box -->
-    </section>
+
+      <div class="activities-in-marseille-gallery">
+
+        <a href="#" class="clickable-link old-port">
+            <img
+                src="images/activites/1_xlarge/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
+                alt="Old port "
+                srcset=""
+                class="img-box"
+              />
+          <h2 class="activities-galery-name">Old Port</h2>
+        </a>
+
+        <a href="#" class="clickable-link pomegues-fort">
+            <img
+            src="images/activites/1_xlarge/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
+            alt="Pomegues Fort"
+            srcset=""
+            class="img-box"
+          />
+          <h2 class="activities-galery-name">Pom&egrave;gues Fort</h2>
+       </a>
+      
+        <a href="#" class="clickable-link frioul-island">
+            <img
+            src="images/activites/1_xlarge/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"
+            alt="Frioul Island"
+            srcset=""
+            class="img-box"
+          />
+          <h2 class="activities-galery-name">Frioul Island</h2>
+        </a>
+
+        <a href="#" class="clickable-link calanques-national-park">
+      
+            <img
+            src="images/activites/1_xlarge/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
+            alt="Calanques National Park"
+            srcset=""
+            class="img-box"
+          />
+            <h2 class="activities-galery-name">Calanques National Park</h2>
+        </a>
+
+        <a href="#" class="clickable-link notre-dame-de-la-garde">
+          
+             <img
+            src="images/activites/1_xlarge/florian-wehde-xW9e8gdotxI-unsplash.jpg"
+            alt="Notre-Dame-de-la-Garde"
+            srcset=""
+            class="img-box"
+          /> 
+          
+           <h2 class="activities-galery-name">Notre-Dame-de-la-Garde</h2>
+        </a>
+
+        <a href="#" class="clickable-link longchamp-park">
+            <img
+            src="images/activites/1_xlarge/lena-paulin-wH2-EJoDcV0-unsplash.jpg"
+            alt="Longchamp Park"
+            srcset=""
+            class="img-box"
+          />
+          <h2 class="activities-galery-name">Longchamp Park</h2>
+        </a>
+    </div> <!-- end of activities-galery -->
+  </section>
+    <!-- </section> end of activities-in-marseille-box -->
+
+  </main>
+    <!-- <FOOTER></FOOTER> -->
+<FOOTER class="footer">
+  <nav class="footer-col">
+    <h2 class="footer-heading">About</h2>
+    <ul class="footer-nav">
+      <li ><a href="#" class="footer-link">Site Map</a></li>
+      <li ><a href="#" class="footer-link">General Terms and Coditions</a></li>
+      <li ><a href="#" class="footer-link">Data and Privacy</a></li>
+    </ul>
+  </nav>
+  <nav class="footer-col"><h2 class="footer-heading">Our Accomodations</h2>
+  <ul class="footer-nav">
+    <li ><a href="#" class="footer-link">Quality Assessment</a></li>
+    <li ><a href="#" class="footer-link">You have a hotel?</a></li>
+  </ul>
+</nav>
+  <nav class="footer-col"><h2 class="footer-heading">Assistance</h2>
+  <ul class="footer-nav">
+    <li ><a href="#" class="footer-link">Help Desk</a></li>
+    <li ><a href="#" class="footer-link">Contact Us</a></li>
+  </ul>
+</nav>
+</FOOTER>
   </body>
 </html>
