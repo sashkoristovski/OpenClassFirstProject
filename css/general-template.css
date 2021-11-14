@@ -1,0 +1,433 @@
+/*
+--- 01 TYPOGRAPHY SYSTEM
+
+- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- Font weights
+Default: 400
+Medium: 500
+Semi-bold: 600
+Bold: 700
+
+- Line heights
+Default: 1
+Small: 1.05
+Medium: 1.2
+Paragraph default: 1.6
+
+- Letter spacing
+-0.5px
+0.75px
+
+--- 02 COLORS
+
+- Primary:  #0065FC
+- Tints lighter color:
+ #DEEBFF
+ 
+- Shades darker color: 
+ #005be3
+ #001e4c
+
+- Accents:
+- Greys
+#F2F2F2
+
+#888
+#767676 (lightest grey allowed on #fff)
+#6f6f6f (lightest grey allowed on #fdf2e9)
+
+Border line color #d4d4d4
+
+--- 05 SHADOWS
+
+0 24px 48px rgba(0, 0, 0, 0.075);
+# a9a9a9
+
+--- 06 BORDER-RADIUS
+
+Default: 16px
+Medium: 24px
+
+--- 07 WHITESPACE
+
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* html { */
+/* font-size: 10px;  */
+/* 10px / 16px = 0.625 = 62.5% */
+/* Percentage of user's browser font-size setting*/
+/*font-size: 62.5%;
+/* } */
+
+body {
+  font-family: "Raleway", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #555;
+}
+
+/**************************/
+/* GENRAL REUSABLE COMPONENTS */
+/**************************/
+
+.container {
+  /* 1200px */
+  max-width: 1200px;
+  padding: 0 32px;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  column-gap: 64px;
+  row-gap: 96px;
+
+  /* margin-bottom: 96px; */
+}
+
+/* .grid:last-child {
+    margin-bottom: 0;
+  } */
+
+.grid:not(:last-child) {
+  margin-bottom: 96px;
+}
+
+.grid--2-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--3-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid--4-cols {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.grid--5-cols {
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.grid--center-v {
+  align-items: center;
+}
+/* Headers text */
+
+h1 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #0065fc;
+  color: #333;
+  letter-spacing: -0.5px;
+}
+h2 {
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+  letter-spacing: -0.5px;
+}
+
+.heading-tertiary {
+  font-size: 30px;
+  line-height: 1.2;
+  margin-bottom: 32px;
+}
+
+.subheading {
+  display: block;
+  font-size: 16px;
+  font-weight: 500;
+  color: #deebff;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+  letter-spacing: 0.75px;
+}
+.btn,
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 16px 32px;
+  border-radius: 9px;
+
+  /* Only necessary for .btn */
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+
+  /* Put transition on original "state" */
+  /* transition: background-color 0.3s; */
+  transition: all 0.3s;
+}
+
+.btn--full:link,
+.btn--full:visited {
+  background-color: #0065fc;
+  color: #fff;
+}
+
+.btn--full:hover,
+.btn--full:active {
+  background-color: #0065fc;
+}
+
+.btn--outline:link,
+.btn--outline:visited {
+  background-color: #fff;
+  color: #555;
+}
+
+.btn--outline:hover,
+.btn--outline:active {
+  background-color: #0065fc;
+
+  /* border: 3px solid #fff; */
+
+  /* Trick to add border inside */
+  box-shadow: inset 0 0 0 3px #fff;
+}
+
+.btn--form {
+  background-color: #45260a;
+  color: #fdf2e9;
+  align-self: end;
+  padding: 12px;
+}
+
+.btn--form:hover {
+  background-color: #fff;
+  color: #555;
+}
+
+.link:link,
+.link:visited {
+  display: inline-block;
+  color: #005be3;
+  text-decoration: none;
+  border-bottom: 1px solid currentColor;
+  padding-bottom: 2px;
+  transition: all 0.3s;
+}
+
+.link:hover,
+.link:active {
+  color: #005be3;
+  border-bottom: 1px solid transparent;
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.list-item {
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.list-icon {
+  width: 30px;
+  height: 30px;
+  color: #0065fc;
+}
+
+*:focus {
+  outline: none;
+  /* outline: 4px dotted #0065FC; */
+  /* outline-offset: 8px; */
+  box-shadow: 0 0 0 8px rgba(0, 101, 252, 0.5);
+}
+
+/* HELPER/SETTINGS CLASSES */
+.margin-right-sm {
+  margin-right: 16px !important;
+}
+
+.margin-bottom-md {
+  margin-bottom: 48px !important;
+}
+
+.center-text {
+  text-align: center;
+}
+
+strong {
+  font-weight: 500;
+}
+
+.more-popular-morning-sun-hotel-img {
+  width: 200px;
+  height: 200px;
+  background-position: center;
+  overflow: hidden;
+  object-fit: cover;
+  object-position: 50% 50%;
+  border-radius: 12px 0 0 12px;
+}
+.more-popular-bed-and-breakfast-img {
+  height: auto;
+  width: auto;
+  max-width: 200px;
+  height: 200px;
+  background-position: center;
+  overflow: hidden;
+  object-fit: cover;
+  object-position: 50% 50%;
+  border-radius: 12px 0 0 12px;
+}
+.more-popular-blanc-hotel-img {
+  height: 200px;
+  width: 200px;
+  /* max-width: 150px; */
+  /* max-height: 150px; */
+  /* overflow: hidden; */
+  object-fit: cover;
+  /* object-position: left bottom; */
+  /* object-position: 20% 10%; */
+  /* background-position: left bottom; */
+  border-radius: 16px 0 0 16px;
+}
+
+
+
+/* extra  */
+.activities-in-marseille-box {
+  padding: 48px 0;
+  margin-bottom: 48px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  justify-content: space-between;
+  align-content: space-between;
+  
+  }
+  .activities-galery-box{
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap; 
+    justify-content: space-between;
+    align-content: space-between;
+   
+  }
+  .activities-galery-img{
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit:cover;
+  
+  }
+  .activities-galery-imgs{
+      /* width: 100%;
+      height: 80% */
+    background-color: #0065fc;
+    /* width: auto; */
+    height: 100%;
+    
+    }
+    .activities-galery-imgs-test{
+      /* background-color: #0065fc; */
+      /* width: 100%; */
+      /* height: 80%; */
+      /* width: auto; */
+      /* height: 100%; */
+      /* width: auto; */
+      /* height: auto; */
+      /* overflow: hidden; */
+      /* background-position: center; */
+      /* overflow: hidden; */
+      /* object-position: center; */
+      
+    }
+    .activities-galery-imgs-test1{
+      /* background-color: #0065fc; */
+      /* width: 100%; */
+      /* height: 70%;  */
+    }
+    .activities-galery-imgs-test2{
+      /* background-color: #0065fc; */
+      /* width: 100%; */
+      /* height: 90%;  */
+      /* justify-self: center; */
+      /* align-self: center; */
+    }
+    .activities-galery-imgs-test8{
+      /* width: 100%; */
+      /* height: 90%;  */
+    }
+    .old-port,
+    .pomegues-fort,
+    .frioul-island,
+    .calanques-national-park,
+    .notre-dame-de-la-garde,
+    .longchamp-park{
+      width: 23.5%;
+  
+  
+      /* display: flex;
+      flex-direction: column; */
+      /* box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.25);
+      border-radius: 12px;
+      overflow: hidden;
+      object-fit:contain; */
+  
+  }
+  
+  .old-port{
+    height: 100%;
+    background-color: violet;
+    /* box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.25);
+    border-radius: 12px;
+    overflow: hidden; */
+    
+  
+  } 
+  .pomegues-fort{
+    height: 50%;
+    background-color: greenyellow;
+  }
+  .frioul-island{
+    background-color: hotpink;
+   height: 30%;
+  }
+  .calanques-national-park{
+   height: 100%;
+  }
+  .notre-dame-de-la-garde{
+    height: 40%;
+  }
+  .longchamp-park{
+  height: 40%;
+  /* max-width: 100%; */
+  
+  }
+  
+  .activities-galery-name{
+    /* background-color: green; */
+    /* padding: 1 2px; */
+    height: 46px;
+    /* border-style: solid; */
+    /* border-width: 2px; */
+    /* border-color: #a9a9a9; */
+    /* border-radius: 0 0 12px 12px ; */
+    /* box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.25);*/
+  
+  }
+  

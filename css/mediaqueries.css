@@ -1,0 +1,86 @@
+
+
+@media(min-width:793px){
+    h1{
+        font-size: 20px;
+        font-weight: 700;
+    }
+    h2{
+        font-size: 16px;
+        font-weight: 700;
+    }
+
+    .container{
+        /* background-color: aqua; */
+        padding: 0 12px;
+    }
+    .accommodations-box{
+        gap: 12px;
+    }
+    .accommodations{
+        padding: 12px;
+    }
+    .accommodations-gallery{
+        gap: 12px;
+    }
+    .accommodations-gallery--text {
+        padding-left: 12px;
+
+    }
+    .accommodations-most-popular {
+        padding:16px 12px 0 12px;
+    }
+    .most-popular-details {
+        padding: 12px 12px;
+
+    }
+
+
+}
+
+/* 992px for computer screens */
+@media(min-width:993px){
+    h1{
+        font-size: 20px;
+    }
+    h2{
+        font-size: 16px;
+    }
+    .container{
+        /* background-color:green; */
+        padding: 0 24px;
+    }
+    .accommodations-box{
+        gap: 24px;
+    }
+    .accommodations{
+        padding: 24px;
+    }
+    .accommodations-gallery{
+        gap: 24px;
+    }
+    .accommodations-gallery--text {
+        padding-left: 16px;
+
+    }
+    .accommodations-most-popular {
+        padding:24px 24px 0 24px;
+    }
+    .most-popular-items{
+        /* padding:16px 0 0 0; */
+    }
+    .most-popular-details {
+        padding: 16px 8px 16px 8px;
+    }
+    .more-popular-img {
+        width: 150px;
+        max-width: 33%;
+        height: 150px;
+    }
+    .footer-padding-left{
+        padding-left: 24px;
+    }
+    .footer-col{
+        padding: 48px 64px 48px 32px;
+    }
+}
