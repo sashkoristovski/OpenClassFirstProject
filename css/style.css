@@ -113,6 +113,10 @@ input[type="text"] {
   padding-right: 8px;
   border-radius: 16px;
 }
+.border--box:hover{
+  transform: scale(1.05);
+  border-width: 2px;
+}
 
 .filter-icons {
   background-color: #deebff;
