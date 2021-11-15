@@ -19,9 +19,8 @@
   padding-bottom: 0;
   background-color: rgba(255, 255, 255, 0.97);
   /* z-index: 999; */
-  /* box-shadow: 0 12px 32px rgba(0, 0, 0, 0.03); */
+/* box-shadow: 0 12px 32px rgba(0, 0, 0, 0.03); */
 
- 
 /* } */
 /* .logo {
 } */
@@ -36,10 +35,9 @@
   justify-content: space-between;
   align-items: flex-start;
   gap: 24px;
-
 }
 /* Searching classes */
-.search-box{
+.search-box {
   flex: 1 1 auto;
   /* padding-top: 64px; */
 }
@@ -168,15 +166,14 @@ accommodations-most-popular */
   flex: 2 2 auto;
 }
 
-.clickable-link{
-
+.clickable-link {
   display: block;
   text-decoration: none;
   cursor: pointer;
   color: #000;
   flex: 1 1 auto;
 }
-.clickable-link:hover{
+.clickable-link:hover {
   transform: scale(1.08);
 }
 .accommodations {
@@ -191,14 +188,13 @@ accommodations-most-popular */
   border-radius: 24px;
 }
 .accommodations-gallery {
-  display:flex;
+  display: flex;
   /* justify-content:space-around; */
   /* align-content:space-between; */
   flex-wrap: wrap;
-  gap:24px;
+  gap: 24px;
   /* gap: 32px; */
   flex: 2 2 auto;
-
 }
 
 .accommodations-gallery-title {
@@ -217,7 +213,6 @@ accommodations-most-popular */
   /* margin-right: 12px; */
 }
 .acommodations-imgs {
-  
   width: 100%;
   height: 140px;
   max-height: 50%;
@@ -236,18 +231,16 @@ accommodations-most-popular */
   max-height: 100px;
   font-size: 16px;
   line-height: 1.5;
-  padding:12px; 
+  padding: 12px;
   flex: 1 2 auto;
-  
 }
-.accommodations-gallery--stars{
+.accommodations-gallery--stars {
   /* display: block; */
   /* align-content: flex-end; */
 }
 .accommodations-gallery--star {
   display: inline-block;
   color: #0065fc;
-
 }
 .accommodations-gallery--nostar {
   color: #f2f2f2;
@@ -312,9 +305,8 @@ accommodations-most-popular */
   flex: 1 1 auto;
 }
 
-
 /* Activities in Marseille */
-.activities-in-marseille-section{
+.activities-in-marseille-section {
   width: 100%;
   margin: 0 auto;
   display: flex;
@@ -323,11 +315,11 @@ accommodations-most-popular */
   justify-content: space-between;
   align-content: space-between;
 }
-.activities-in-marseille-title{
-padding: 48px 0 32px 0;
+.activities-in-marseille-title {
+  padding: 48px 0 32px 0;
 }
 
-.activities-in-marseille-gallery{
+.activities-in-marseille-gallery {
   width: 100%;
   height: 400px;
   display: flex;
@@ -337,87 +329,85 @@ padding: 48px 0 32px 0;
   flex-wrap: wrap;
   flex-direction: column;
   /* padding: 0 16px; */
-
-
-
 }
-.activities-galery-name{
-  padding: 16px ;
+.activities-galery-name {
+  display: block;
+  padding: 16px;
   font-size: 16px;
 }
-.img-box{
+.img-box {
+  display: block;
   width: 100%;
   height: 100%;
   align-self: stretch;
   justify-self: stretch;
-  object-fit:cover;
+  object-fit: cover;
   /* flex: 1 2 22%; */
 }
-.old-port{
+.old-port {
   height: 350px;
   display: flex;
   flex-direction: column;
 }
-.img-box-old-port{
+.img-box-old-port {
   width: 100%;
   height: 100%;
   align-self: stretch;
   justify-self: stretch;
-  object-fit:cover;
+  object-fit: cover;
 }
-.pomegues-fort{
+.pomegues-fort {
   height: 225px;
   display: flex;
   flex-direction: column;
 }
-.img-box-pomegues-fort{
+.img-box-pomegues-fort {
   width: 100%;
   height: 100%;
   align-self: stretch;
   justify-self: stretch;
-  object-fit:cover;
+  object-fit: cover;
 }
-.frioul-island{
+.frioul-island {
   height: 125px;
   display: flex;
   flex-direction: column;
 }
-.img-box-frioul-island{
+.img-box-frioul-island {
   width: 100%;
   height: 100%;
   align-self: stretch;
   justify-self: stretch;
-  object-fit:cover;
-
+  object-fit: cover;
 }
-.calanques-national-park{
+.calanques-national-park {
   /* max-width: 25%; */
   height: 350px;
   display: flex;
   flex-direction: column;
 }
-.img-box-calanques-national-park{
+.img-box-calanques-national-park {
   width: 100%;
   height: 100%;
   align-self: stretch;
   justify-self: stretch;
-  object-fit:cover;
+  object-fit: cover;
 }
 
-.notre-dame-de-la-garde{
+.notre-dame-de-la-garde {
   /* max-width: 25%; */
   height: 175px;
   display: flex;
   flex-direction: column;
 }
-.img-box-notre-dame-de-la-garde{
+.img-box-notre-dame-de-la-garde {
   width: 100%;
   height: 100%;
   align-self: stretch;
   justify-self: stretch;
-  object-fit:cover;
+  object-fit: cover;
 }
-.longchamp-park{
+.longchamp-park {
   /* max-width: 25%; */
   height: 175px;
   display: flex;
@@ -428,42 +418,39 @@ padding: 48px 0 32px 0;
 .frioul-island,
 .calanques-national-park,
 .notre-dame-de-la-garde,
-.longchamp-park{
+.longchamp-park {
   display: block;
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
   width: 23%;
   max-width: 25%;
   box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.25);
   border-radius: 12px;
   overflow: hidden;
   flex: 1 1 auto;
-
 }
 
 /* Footer classes */
 
-.footer{
-background-color: #f2f2f2;
+.footer {
+  background-color: #f2f2f2;
   display: flex;
   gap: 48px;
   width: 100%;
   /* height: 250px; */
   justify-content: flex-start;
   align-content: space-around;
+  padding-left: 24px;
   /* flex: 1 1 auto; */
-
 }
-.footer-col{
+.footer-col {
   padding: 48px 48px 48px 0;
   display: block;
-text-decoration: none;
-
+  text-decoration: none;
 }
-.footer-heading{
+.footer-heading {
   margin-bottom: 24px;
-
 }
-.footer-nav{
+.footer-nav {
   display: block;
   list-style: none;
   text-decoration: none;
@@ -476,18 +463,18 @@ text-decoration: none;
 }
 
 .footer-link:link,
-.footer-link:visited{
+.footer-link:visited {
   display: inline-block;
   text-decoration: none;
   font-size: 16px;
   color: #000;
 }
 .footer-link:hover,
-.footer-link:active{
-  color: #0065FC;
+.footer-link:active {
+  color: #0065fc;
   font-weight: 600;
   transition: color 0.3s;
 }
-.footer-padding-left{
+.footer-padding-left {
   padding-left: 12px;
 }
