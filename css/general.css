@@ -54,7 +54,7 @@ Large: 24px
 --- 07 WHITESPACE
 
 - Spacing system (px)
-2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+2 / 4 / 8 / 12 / 16 / 20 / 24 / 32 / 48 / 64 / 80 / 96 / 128
 */
 
 * {
@@ -90,8 +90,8 @@ body {
   /* 1200px */
   /* max-width: 1200px; */
   /* width: 1500px; */
-  max-width: 100vw;
-  padding: 0 24px;
+  width: 100vw;
+  padding: 0 20px;
   margin: 0 auto;
   flex: 1 1 auto;
 }
@@ -105,31 +105,28 @@ h1 {
   color: black;
   /* letter-spacing: -1px; */
   letter-spacing: -0.7px;
-  font-weight: 700;
   line-height: 1.5;
+  white-space: nowrap;
 }
 h2 {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 700;
   color: black;
-  letter-spacing: -1px;
+  /* letter-spacing: -0.7px; */
   /* line-height: 1.5; */
+  white-space: nowrap;
 }
-h3 {
-  font-size: 16px;
-  font-weight: 600;
-
-} 
 
 p{
-  font-size: 16px;
-  letter-spacing: -0.7px;
+  font-size: 14px;
+  /* letter-spacing: -0.7px; */
+  white-space: nowrap;
 }
 
 .btn,
 .btn:link,
 .btn:visited {
-  display: inline-block;
+  display:block;
   text-decoration: none;
   font-size: 16px;
   font-weight: 600;
@@ -149,10 +146,14 @@ p{
 .btn:active {
   color: #0065fc;
   border-top: 2px solid #0065fc;
+  /* cursor: pointer; */
 
 }
 /* .btn--full:link,
 .btn--full:visited {
 } */
+
+
+
 
 
