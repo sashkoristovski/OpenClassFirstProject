@@ -1,0 +1,515 @@
+/* header classes */
+
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-content: space-between;
+  padding: 32px 0;
+}
+
+/* .sticky{
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 64px;
+  padding-top: 0;
+  padding-bottom: 0;
+  background-color: rgba(255, 255, 255, 0.97);
+  /* z-index: 999; */
+/* box-shadow: 0 12px 32px rgba(0, 0, 0, 0.03); */
+
+/* } */
+/* .logo {
+} */
+.logo-img {
+  width: 98px;
+  margin-left: -12px;
+  /* padding: 24px 0; */
+}
+
+.header-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 24px;
+  padding-right: 24px;
+}
+/* Searching classes */
+.search-box {
+  flex: 1 1 auto;
+  /* padding-top: 64px; */
+}
+
+.searching-text {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.search-container {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  height: 64px;
+
+  border-radius: 12px 0 0 12px;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+.search-icon {
+  background-color: #f2f2f2;
+  align-self: center;
+  justify-self: stretch;
+  color: black;
+  border-radius: 12px 0 0 12px;
+  padding: 16px;
+}
+.search-form {
+  box-sizing: border-box;
+  font-weight: 700;
+  padding: 10px 16px;
+}
+.border-removed-input {
+  border: 0;
+  padding: 12px;
+}
+input[type="text"] {
+  box-sizing: border-box;
+  font-size: 16px;
+  padding: 12px 4px;
+  margin: 8px 0;
+}
+
+.search-sub-btn {
+  background-color: #0065fc;
+  border: none;
+  color: #fff;
+  font-weight: 700;
+  padding: 10px 16px;
+  text-align: center;
+  overflow: hidden;
+
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 0 12px 12px 0;
+}
+.search-btn-icon{
+  display:none;
+}
+.search-sub-btn:hover{
+  cursor: pointer;
+}
+
+/* Filters section */
+.filters--box {
+  width: 66%;
+  max-width: 800px;
+  flex:auto;
+  display: flex;
+  /* flex-direction: column; */
+  gap: 16px;
+  align-items: center;
+  justify-content: stretch;
+  height: 48px;
+  font-weight: 700;
+  margin-bottom: 32px;
+  flex: 1 1 auto;
+}
+.border--box {
+  border-style: solid;
+  border-width: 1px;
+  border-color: #d4d4d4;
+  border-radius: 16px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex: 1 1 auto;
+}
+.border--box:hover {
+  transform: scale(1.05);
+  border-width: 2px;
+  cursor: pointer;
+}
+
+.filter-icons {
+  display: block;
+  background-color: #deebff;
+  color: #0065fc;
+  padding: 8px;
+  border-radius: 16px;
+  flex: 0 1 auto;
+}
+
+.filters--span{
+  padding: 0 8px;
+}
+.filter-text
+.low-cost
+.family-friendly
+.romantic
+.pets-allowed{
+  flex: 1 1 auto;
+}
+
+
+/* Search info */
+/* .search-info {
+  width: 50%;
+} */
+.search-info {
+  display: flex;
+}
+
+.search-info--icon {
+  justify-self: start;
+  align-self: flex-start;
+  size: 2px;
+  padding: 8px;
+  color: #0065fc;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #a9a9a9;
+  border-radius: 50%;
+}
+.search-info--text {
+  display: inline-block;
+  padding-top: 8px;
+  margin-left: 12px;
+  font-size: 18px;
+  margin-bottom: 16px;
+}
+/* Accommodations in Marsellie */
+/* 
+accommodations-box
+accommodations
+accommodations-gallery
+accommodations-gallery-title
+accommodations-most-popular */
+
+.accommodations-box {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+  align-content: space-between;
+  justify-content: space-between;
+}
+
+.clickable-link {
+  /* display: flex; */
+  /* flex-direction: column; */
+  text-decoration: none;
+  cursor: pointer;
+  color: #000;
+  /* flex: 1 1 auto; */
+}
+.clickable-link:hover {
+  transform: scale(1.05);
+}
+.accommodations {
+  width: 66%;
+  /* max-width: 66%; */
+  padding: 20px 20px 0 20px;
+  background-color: #f2f2f2;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  /* flex: 2 2 auto; */
+}
+.accommodations-gallery {
+  display: flex;
+  justify-content:space-between;
+  align-content:space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.accommodations-gallery-title {
+  padding: 0 0 20px 0;
+  /* flex: 2 2 auto; */
+}
+
+.accommodations-gallery-item {
+  width: 31%;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+}
+.acommodations-imgs {
+  width: 100%;
+  /* height: 130px; */
+  height: 100px;
+  object-fit: cover;
+  padding: 4px 4px 0px 4px;
+  border-radius: 20px 20px 0 0;
+  /* flex: 3 3 100px; */
+}
+
+.accommodations-gallery--text {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  line-height: 1.5;
+  padding: 12px;
+  white-space: nowrap; 
+  /* flex: 1 1 auto; */
+}
+
+.accommodations-gallery--star {
+  display: inline-block;
+  color: #0065fc;
+  /* flex: 1 2 auto; */
+}
+.accommodations-gallery--nostar {
+  color: #f2f2f2;
+  display: inline-block;
+  /* flex: 1 2 auto; */
+}
+.accommodations--show-more {
+  padding: 0 0 20px;
+  font-size: 18px;
+  font-weight: 700;
+  /* flex: 1 2 auto; */
+}
+.accommodations--show-more:hover{
+  color: #0065fc;
+}
+
+/* ................................ */
+/* Most popular section */
+/* ................................ */
+.accommodations-most-popular {
+  width: 33%;
+  padding: 20px 20px 0 20px;
+  background-color: #f2f2f2;
+  display: flex;
+  flex-direction: column;
+  /* gap: 20px; */
+  border-radius: 24px;
+  box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.25);
+  /* flex: 1 1 auto; */
+}
+.most-popular--title {
+  display: flex;
+  justify-content: space-between;
+  align-content: space-between;
+  padding: 0 0 20px 0;
+}
+.most-popular-icon{
+  padding-right: 20px;
+  align-self: center;
+}
+.most-popular-galery{
+  height: 100%;
+  /* background-color: aqua; */
+  padding-bottom: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+}
+
+/* Not in used */
+.most-popular-items{
+  width: 100%;
+  height: 30%;
+  display: flex;
+  padding: 4px;
+  background-color: #fff;
+  border-radius: 12px;
+/* Not in used */
+
+
+  /* flex-direction: column; */
+  /* align-content: space-between; */
+  /* justify-content: space-between; */
+  /* flex: 1 1 auto; */
+}
+.most-popular-item {
+  width: 100%;
+  display: flex;
+  padding: 4px;
+  border-radius: 20px;
+  /* flex:1 1 auto; */
+  
+  /* flex-direction: column; */
+}
+.more-popular-img {
+  width: 45%;
+  /* max-width: 50%; */
+  height: 100%;
+  /* height: 33%; */
+  background-position: center;
+  overflow: hidden;
+  object-fit: cover;
+  object-position: 50% 50%;
+  border-radius: 12px 0 0 12px;
+  /* flex: 1 1 auto; */
+}
+
+.most-popular-details {
+  /* width:60%; */
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: space-between;
+  font-size: 16px;
+  padding: 12px 12px;
+  /* flex: 1 1 auto; */
+}
+
+/* Activities in Marseille */
+.activities-in-marseille-section{
+  padding-bottom: 48px;
+}
+.activities-in-marseille-title {
+  padding: 48px 0 32px 0;
+}
+
+.activities-in-marseille-gallery {
+
+  width: 100%;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+  gap: 24px;
+
+}
+/* ..................................... */
+/* Re useable classes */
+/* ..................................... */
+.activities-galery-name {
+  padding: 16px;
+  font-size: 16px;
+  /* background-color: #0065fc; */
+  /* height: 48px; */
+}
+.img-box {
+  /* display: block; */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  overflow: hidden;
+  /* flex:auto; */
+}
+/* .................................... */
+.clickable-activities-links {
+  text-decoration: none;
+  cursor: pointer;
+  box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.25);
+  border-radius: 12px;
+  color: #000;
+  width: 23%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.clickable-activities-links:hover {
+  transform: scale(1.03);
+}
+/* .............................. */
+/*  Old port   */
+/* .............................. */
+.clickable-link--old-port {
+  height: 100%;
+  max-height: fit-content;
+}
+/* .............................. */
+/*  pomegues-fort   */
+/* .............................. */
+
+.clickable-link--pomegues-fort {
+
+  height: 53%;
+  max-height: fit-content;
+}
+
+/* The max-block-size CSS property specifies the maximum size of an element in the direction opposite that of the writing direction as specified by writing-mode. That is, if the writing direction is horizontal, then max-block-size is equivalent to max-height; if the writing direction is vertical, max-block-size is the same as max-width. */
+
+/* .............................. */
+/* frioul-island    */
+/* .............................. */
+.clickable-link--frioul-island {
+  height: 40%;
+  max-height: fit-content;
+}
+
+/* .............................. */
+/*  clickable-link-calanques-national-park   */
+/* .............................. */
+
+.clickable-link-calanques-national-park {
+  height: 100%;
+  max-height: fit-content;
+}
+  
+/* .............................. */
+/*  clickable-link--notre-dame-de-la-garde  */
+/* .............................. */
+
+.clickable-link--notre-dame-de-la-garde {
+  height: 46%;
+  max-height: fit-content;
+}
+/* .............................. */
+/*  clickable-link-calanques-national-park   */
+/* .............................. */
+
+.clickable-link--longchamp-park {
+  height: 46%;
+  max-height: fit-content;
+}
+
+/* Footer classes */
+
+.footer {
+  background-color: #f2f2f2;
+  width: 100%;
+  display: flex;
+  padding-bottom: 48px;
+}
+.footer-col {
+  width: 33%;
+  /* display: block; */
+  text-decoration: none;
+}
+.footer-heading {
+  padding: 48px 0 24px 0;
+}
+.footer-nav {
+  display: block;
+  list-style: none;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: space-between;
+  gap: 12px;
+  color: #000;
+}
+
+.footer-link:link,
+.footer-link:visited {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 16px;
+  color: #000;
+}
+.footer-link:hover,
+.footer-link:active {
+  color: #0065fc;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+
+
+
