@@ -96,10 +96,10 @@ input[type="text"] {
   font-size: 16px;
   border-radius: 0 12px 12px 0;
 }
-.search-btn-icon{
-  display:none;
+.search-btn-icon {
+  display: none;
 }
-.search-sub-btn:hover{
+.search-sub-btn:hover {
   cursor: pointer;
 }
 
@@ -107,7 +107,7 @@ input[type="text"] {
 .filters--box {
   width: 66%;
   max-width: 800px;
-  flex:auto;
+  flex: auto;
   display: flex;
   /* flex-direction: column; */
   gap: 16px;
@@ -143,17 +143,12 @@ input[type="text"] {
   flex: 0 1 auto;
 }
 
-.filters--span{
+.filters--span {
   padding: 0 8px;
 }
-.filter-text
-.low-cost
-.family-friendly
-.romantic
-.pets-allowed{
+.filter-text .low-cost .family-friendly .romantic .pets-allowed {
   flex: 1 1 auto;
 }
-
 
 /* Search info */
 /* .search-info {
@@ -193,16 +188,17 @@ accommodations-most-popular */
   display: flex;
   gap: 20px;
   width: 100%;
+  /* height: 600px; */
   align-content: space-between;
   justify-content: space-between;
 }
 
 .clickable-link {
-  /* display: flex; */
-  /* flex-direction: column; */
+  /* width: 31%; */
   text-decoration: none;
   cursor: pointer;
   color: #000;
+  /* position: absolute; */
   /* flex: 1 1 auto; */
 }
 .clickable-link:hover {
@@ -220,8 +216,8 @@ accommodations-most-popular */
 }
 .accommodations-gallery {
   display: flex;
-  justify-content:space-between;
-  align-content:space-between;
+  justify-content: space-between;
+  align-content: space-between;
   flex-wrap: wrap;
   gap: 20px;
 }
@@ -233,6 +229,8 @@ accommodations-most-popular */
 
 .accommodations-gallery-item {
   width: 31%;
+  max-width: 33%;
+  /* height: 300px; */
   background-color: white;
   border-radius: 20px;
   box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.25);
@@ -241,8 +239,7 @@ accommodations-most-popular */
 }
 .acommodations-imgs {
   width: 100%;
-  /* height: 130px; */
-  height: 100px;
+  height: 150px;
   object-fit: cover;
   padding: 4px 4px 0px 4px;
   border-radius: 20px 20px 0 0;
@@ -251,11 +248,12 @@ accommodations-most-popular */
 
 .accommodations-gallery--text {
   width: 100%;
+  height: 100px;
   display: flex;
   flex-direction: column;
-  line-height: 1.5;
+  justify-content: space-between;
   padding: 12px;
-  white-space: nowrap; 
+  white-space: nowrap;
   /* flex: 1 1 auto; */
 }
 
@@ -270,14 +268,31 @@ accommodations-most-popular */
   /* flex: 1 2 auto; */
 }
 .accommodations--show-more {
-  padding: 0 0 20px;
-  font-size: 18px;
+  padding: 0 0 32px 0;
+  font-size: 16px;
   font-weight: 700;
-  /* flex: 1 2 auto; */
-}
-.accommodations--show-more:hover{
-  color: #0065fc;
-}
+  text-decoration: none;
+  cursor: pointer;
+  color: #000;
+
+  }
+  .static-links{
+    text-decoration: none;
+    cursor: pointer;
+    color: #000;
+  }
+  .static-links:hover {
+    color: #0065fc; 
+    /* Put transition on original "state" */
+    transition: all 0.3s;
+    }
+  
+  .accommodations--show-more:hover {
+  color: #0065fc; 
+  /* Put transition on original "state" */
+  transition: all 0.3s;
+  }
+  
 
 /* ................................ */
 /* Most popular section */
@@ -299,57 +314,58 @@ accommodations-most-popular */
   align-content: space-between;
   padding: 0 0 20px 0;
 }
-.most-popular-icon{
+.most-popular-icon {
   padding-right: 20px;
   align-self: center;
 }
-.most-popular-galery{
+.most-popular-galery {
   height: 100%;
   /* background-color: aqua; */
   padding-bottom: 32px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-
 }
 
-/* Not in used */
-.most-popular-items{
+.most-popular-items {
   width: 100%;
+  height: 100px;
   height: 30%;
   display: flex;
   padding: 4px;
   background-color: #fff;
   border-radius: 12px;
-/* Not in used */
-
-
+  /* Not in used */
   /* flex-direction: column; */
   /* align-content: space-between; */
   /* justify-content: space-between; */
   /* flex: 1 1 auto; */
+  /* Not in used */
 }
-.most-popular-item {
+.most-popular-item   /* Not in used */
+
+ {
   width: 100%;
   display: flex;
   padding: 4px;
   border-radius: 20px;
   /* flex:1 1 auto; */
-  
   /* flex-direction: column; */
 }
 .more-popular-img {
-  width: 45%;
-  /* max-width: 50%; */
-  height: 100%;
+width: 110px;
+height: 100%;
+  /* width: 45%; */
+  /* max-width: 110px; */
+  /* height: 25%; */
   /* height: 33%; */
   background-position: center;
   overflow: hidden;
   object-fit: cover;
   object-position: 50% 50%;
   border-radius: 12px 0 0 12px;
-  /* flex: 1 1 auto; */
-}
+  flex: 1 1 auto;
+} 
 
 .most-popular-details {
   /* width:60%; */
@@ -360,11 +376,11 @@ accommodations-most-popular */
   align-content: space-between;
   font-size: 16px;
   padding: 12px 12px;
-  /* flex: 1 1 auto; */
+  flex: 0 1 auto; 
 }
 
 /* Activities in Marseille */
-.activities-in-marseille-section{
+.activities-in-marseille-section {
   padding-bottom: 48px;
 }
 .activities-in-marseille-title {
@@ -372,16 +388,14 @@ accommodations-most-popular */
 }
 
 .activities-in-marseille-gallery {
-
   width: 100%;
   height: 450px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  justify-content: space-between;
-  align-content: space-between;
+  /* justify-content: space-between; */
+  /* align-content: space-between; */
   gap: 24px;
-
 }
 /* ..................................... */
 /* Re useable classes */
@@ -390,27 +404,38 @@ accommodations-most-popular */
   padding: 16px;
   font-size: 16px;
   /* background-color: #0065fc; */
-  /* height: 48px; */
+  height: 48px;
+}
+.activites-img-box{
+  width: 100%;
+  height: calc(100% - 48px);
+
+}
+.img-box-test{
+width: 100%;
+height: 100%;
 }
 .img-box {
   /* display: block; */
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  overflow: hidden;
-  /* flex:auto; */
+  /* height: calc(100% - 48px); */
+  /* object-fit: cover; */
 }
 /* .................................... */
 .clickable-activities-links {
   text-decoration: none;
   cursor: pointer;
   box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
   border-radius: 12px;
   color: #000;
   width: 23%;
-  overflow: hidden;
   display: flex;
   flex-direction: column;
+  /* justify-content: space-between; */
+  /* align-content: space-between; */
+
 }
 .clickable-activities-links:hover {
   transform: scale(1.03);
@@ -419,15 +444,16 @@ accommodations-most-popular */
 /*  Old port   */
 /* .............................. */
 .clickable-link--old-port {
+  width: 23%;
   height: 100%;
-  max-height: fit-content;
+
 }
 /* .............................. */
 /*  pomegues-fort   */
 /* .............................. */
 
 .clickable-link--pomegues-fort {
-
+  /* height: calc(53% - 48px); */
   height: 53%;
   max-height: fit-content;
 }
@@ -450,7 +476,7 @@ accommodations-most-popular */
   height: 100%;
   max-height: fit-content;
 }
-  
+
 /* .............................. */
 /*  clickable-link--notre-dame-de-la-garde  */
 /* .............................. */
@@ -509,7 +535,3 @@ accommodations-most-popular */
   font-weight: 600;
   transition: color 0.3s;
 }
-
-
-
-

@@ -1,11 +1,11 @@
 /* 1200px for larger computer screens */
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1600px) {
   h1 {
     font-size: 24px;
     letter-spacing: -0.7px;
   }
   h2 {
-    font-size: 16px;
+    font-size: 20px;
     letter-spacing: -0.7px;
   }
   p {
@@ -40,7 +40,8 @@
     padding-left: 16px;
   }
   .accommodations-gallery-item {
-    width: 30%;
+    width: 31%;
+    /* height: 250px; */
   }
   .accommodations-most-popular {
     padding: 32px 32px 0 32px;
@@ -49,9 +50,9 @@
     padding: 16px 8px 16px 8px;
   }
   .more-popular-img {
-    width: 130px;
-    max-width: 50%;
-    height: 130px;
+    width: 170px;
+    /* max-width: 50%; */
+    /* height: 130px; */
   }
   .activities-galery-name {
     font-size: 16px;
@@ -65,6 +66,16 @@
     /* background-color: blueviolet; */
     padding: 0 12px;
   }
+  h1 {
+    font-size: 20px;
+    font-weight: 700;
+    white-space: normal;
+  }
+  h2 {
+    font-size: 16px;
+    font-weight: 700;
+    white-space: normal;
+  }
   .activities-in-marseille-gallery {
     height: 350px;
   }
@@ -76,42 +87,59 @@
 
 @media (min-width: 769px) and (max-width: 992px) {
   h1 {
-    font-size: 20px;
-    font-weight: 700;
-  }
-  h2 {
     font-size: 16px;
     font-weight: 700;
+    white-space: normal;
+  }
+  h2 {
+    font-size: 14px;
+    font-weight: 700;
+    white-space: normal;
   }
 
   .container {
-    background-color: aqua;
-    padding: 0 12px;
-    padding: 0 12px 48px 12px;
+    padding: 0 8px;
   }
   .accommodations-box {
     gap: 12px;
   }
   .accommodations {
-    padding: 12px;
+    /* width: 70%; */
+    padding: 12px 8px;
   }
   .accommodations-gallery {
-    gap: 12px;
+    gap: 8px;
   }
+  .accommodations-gallery-item {
+    width: 32%;
+    /* width: 100%; */
+    /* max-width: 33%; */
+  }
+
   .accommodations-gallery--text {
     padding-left: 12px;
   }
   .accommodations-most-popular {
-    padding: 16px 12px 0 12px;
+    /* width: 30%; */
+    padding: 16px 8px 0 8px;
   }
   .most-popular-details {
-    padding: 12px 12px;
+    padding: 12px 4px;
+  }
+  br {
+    display: none;
+  }
+  .accommodations--show-more {
+    padding: 24px 0 24px 0;
   }
   .activities-in-marseille-gallery {
     gap: 12px;
   }
   .most-popular-item {
-    height: 150px;
+    /* height: 150px; */
+  }
+  .more-popular-img {
+    width: 80px;
   }
 }
 
@@ -124,7 +152,7 @@
     /* letter-spacing: -0.7px; */
   }
   h2 {
-    font-size: 16px;
+    font-size: 14px;
     white-space: unset;
     font-weight: 700;
     letter-spacing: unset;
@@ -177,7 +205,7 @@
     /* padding: 12px 24px; */
 
     /* Only necessary for .btn */
-    border-bottom: 1px solid #0065fc;
+    border-bottom: 2px solid #0065fc;
     cursor: pointer;
     font-family: inherit;
     color: #333;
@@ -189,8 +217,11 @@
   .btn:hover,
   .btn:active {
     color: #0065fc;
+    border-top: none;
     border-bottom: 4px solid #0065fc;
-    /* cursor: pointer; */
+    /* Put transition on original "state" */
+    transition: all 0.3s;
+    /* transition: background-color 0.3s; */
   }
 
   /* Searching classes */
@@ -277,30 +308,31 @@
 
   .low-cost {
     order: 0;
-    width: 40%;
-    max-width: 50%;
-    flex: 1;
+    width: 45%;
+    /* max-width: 50%; */
+    /* flex: 1 1 48%; */
   }
   .romantic {
     order: 0;
-    width: fit-content;
-    max-width: 49%;
-    flex: 1;
+    width: 45%;
+    /* max-width: 51%; */
+    /* max-width: 50%; */
+    /* flex: 1 1 48%; */
   }
   .family-friendly {
     order: 1;
-    width: 55%;
-    max-width: 51%;
-    flex: 0 1 auto;
+    width: 60%;
+    /* max-width: 51%; */
+    flex: 0 1 55%;
   }
   .pets-allowed {
     order: 2;
-    width: 52%;
-    max-width: 60%;
-    flex: 1 1 auto;
+    width: 66%;
+    /* max-width: 65%; */
+    flex: 0 1 62%;
   }
   .filters--span {
-    padding: 0 16px;
+    padding: 0 12px;
   }
 
   /* Accommodations in Marsellie */
@@ -331,13 +363,13 @@
     height: 150px;
   }
   .more-popular-img {
-    width: 140px;
+    /* width: 100px; */
     /* max-width: 50%; */
     /* height: 150px; */
-    flex: 0 0 140px;
+    /* flex: 1 1 110px; */
   }
   .most-popular-details {
-    /* width: 60%; */
+    padding: 12px 4px;
   }
 
   /* Accommodations in Marsellie */
@@ -351,6 +383,7 @@
   }
   .accommodations-gallery-item {
     width: 100%;
+    max-width: 100%;
     box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.15);
   }
   .acommodations-imgs {
