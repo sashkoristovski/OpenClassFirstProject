@@ -25,9 +25,6 @@
     <link rel="stylesheet" href="css/general.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/mediaqueries.css" />
-    <!-- <link rel="stylesheet" type="text/css" href="https://sashkoristovski.github.io/OpenClassFirstProject/css/style.css"> -->
-    <!-- <link rel="stylesheet" type="text/css" href="https://sashkoristovski.github.io/OpenClassFirstProject/css/general.css"> -->
-    <!-- <link rel="stylesheet" type="text/css" href="https://sashkoristovski.github.io/OpenClassFirstProject/css/ss/mediaqueries.css"> -->
 
     <!-- Script for icons  -->
     <script
@@ -42,11 +39,20 @@
       <!-- Header box -->
       <header class="header">
         <div class="logo">
-          <img
+          <picture>
+            <source
+              media="(max-width:992px)"
+              srcset="
+                images/logo/Booki.png
+              "
+            />
+            <img
             class="logo-img"
             src="images/logo/Booki@3x.png"
             alt="Booki website logo "
           />
+          </picture>
+          
         </div>
         <nav class="header-links">
           <a href="#anchor-accomodations" class="btn header-link-accomodations">
@@ -76,8 +82,8 @@
               placeholder="Marselle,France"
               name="search"
             />
-            <button class="search-sub-btn" type="submit">Submit</button>
-            <button class="search-btn-icon" type="submit">
+            <button class="search-sub-btn" aria-label="Submit search button" type="submit">Submit</button>
+            <button class="search-btn-icon" aria-label="Submit search button"  type="submit">
               <i class="fas fa-search fa-lg"></i>
             </button>
           </form>
@@ -106,10 +112,10 @@
       </section>
       <div class="search-info">
         <i class="search-info--icon fas fa-info"></i>
-        <span class="search-info--text"
+        <h2 class="search-info--text"
           >More then 500 accomodations are available in this <br />
           city
-        </span>
+        </h2>
       </div>
       <!-- Accommodations in Marsellie  -->
       <section class="accommodations-box">
@@ -605,7 +611,7 @@
                 <img
                   src="images/activites/1_xlarge/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
                   alt="Old port "
-                  class="img-box-test"
+                  class="img-box"
                 />
               </picture>
             </div>
@@ -777,7 +783,7 @@
                 />
                 <img
                   src="images/activites/1_xlarge/florian-wehde-xW9e8gdotxI-unsplash.jpg"
-                  alt="Notre-Dame-de-la-Garde"
+                  alt="Notre Dame de la Garde"
                   class="img-box"
                 />
               </picture>
