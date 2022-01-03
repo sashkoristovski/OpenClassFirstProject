@@ -1,0 +1,78 @@
+.menu {
+  width: 100%;
+  background-color: lighten($color: $colour-accent, $amount: 70%);
+  padding-bottom: $layout-padding-top-bottom;
+  &__img {
+    z-index: -10;
+    position: relative;
+    overflow: hidden;
+    // insert img
+    background-image: url("/public/img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+   width: 100%;
+   height: 15rem;
+    background-size: cover;
+    // height: 20rem;
+  }
+  &__img img {
+    border-radius: unset;
+  }
+  &__title {
+    z-index: 100;
+    margin-top: -2rem;
+    border-radius: 3rem 3rem 0 0;
+    background-color: green;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: $layout-padding-top-bottom $layout-padding-left-right;
+
+    &--h2 {
+      font-size: 2.4rem;
+      font-weight: 500;
+    }
+  }
+  &__icon {
+    display: block;
+    justify-self: center;
+    padding-right: $layout-padding-left-right;
+  }
+}
+.menu-card {
+  background-color: $colour-white;
+  border-radius: 1.6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-top: $layout-padding-top-bottom * 0.5;
+  padding-bottom: $layout-padding-top-bottom * 0.5;
+  padding-right: $layout-padding-left-right * 2;
+  padding-left: $layout-padding-left-right;
+  &--h3 {
+    font-weight: 400;
+    font-size: 2rem;
+    letter-spacing: -1px;
+    color: lighten($color: $colour-accent, $amount: 20%);
+  }
+
+  &__title {
+    text-transform: uppercase;
+    padding-bottom: $layout-padding;
+
+    &--line {
+      width: 4.6rem;
+      height: 8px;
+      border-bottom: 4px solid $colour-tertiary;
+    }
+  }
+  &__txt {
+    line-height: 1.5;
+  }
+  &--grid {
+    display: flex;
+    flex-direction: column;
+    gap: $layout-padding;
+  }
+}

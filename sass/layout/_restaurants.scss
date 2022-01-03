@@ -1,0 +1,55 @@
+.restaurants {
+  // background-color: lighten($color: $colour-accent, $amount: 70%);
+  padding: $layout-padding-top-bottom * 2 $layout-padding-left-right;
+  background-color: $bg-color;
+  padding: 0;
+
+  &__galery {
+    display: flex;
+    flex-direction: column;
+    gap: $layout-padding;
+
+    &__items {
+      box-shadow: 0px 2px 1rem rgba(0, 0, 0, 0.33);
+      // border-radius: 1.4rem;
+    }
+    &__item{
+      position: relative;
+    }
+    &__txt {
+      background-color: $colour-white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: $layout-padding;
+      border-radius: 0 0 1.4rem 1.4rem;
+      line-height: 1.5;
+      &--p{
+        font-weight: 400;
+      }
+    }
+
+    &__icon {
+      padding-right: 1.4rem;
+    }
+  }
+
+  &__img {
+    width: 100%;
+    height: 16rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    object-fit: cover;
+    overflow: hidden;
+    border-radius: 1.4rem 1.4rem 0 0;
+    // object-position: -30% -10%;
+  }
+}
+.card__new{
+  background: $colour-tertiary;
+  padding: $layout-padding-top-bottom*0.25 $layout-padding-left-right*2;
+  position:absolute;
+  top: 1.8rem;
+  right: 1.8rem;
+}

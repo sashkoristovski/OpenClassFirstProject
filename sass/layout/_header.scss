@@ -1,0 +1,33 @@
+.header {
+  position: relative;
+  max-width: $screenwidth-max;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  padding: $flex-layout-gap 0;
+  &__img {
+    object-fit: fill;
+    width: 50%;
+  }
+  &__icon {
+    position: absolute;
+    top: 1.8rem;
+    left: 1.8rem;
+  }
+}
+
+.site-title {
+  background-color: darken($color: $bg-color, $amount: 10%);
+  border-top: solid 0.4rem darken($color: $bg-color, $amount: 20%);
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  color: $colour-accent;
+  gap: $grid-layout-gap;
+  padding: $flex-layout-gap 0;
+  &__icon {
+    display: inline-block;
+  }
+}
+
+// 2 / 4 / 8 / 12 / 16 / 20 / 24 / 32 / 48 / 64 / 80 / 96 / 128

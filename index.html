@@ -2,889 +2,208 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <!-- A mobile-optimized site: -->
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
-
-    <!-- the small zoom applied by many smartphones by setting the initial scale and minimum-scale values to 0.86.  -->
-    <!-- The result is horizontal scroll is suppressed in any orientation and the user can zoom in if they want to. -->
-    <!-- <meta
-      name="viewport"
-      content="width=device-width, initial-scale=0.86, maximum-scale=5.0, minimum-scale=0.86"
-    /> -->
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-    <!-- Google font link -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap"
       rel="stylesheet"
     />
-    <!-- CSS links -->
-    <link rel="stylesheet" href="css/general.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/mediaqueries.css" />
-
+    <link rel="stylesheet" type="text/css" href="public/css/style.css" />
     <!-- Script for icons  -->
     <script
       src="https://kit.fontawesome.com/c5154a734b.js"
       crossorigin="anonymous"
     ></script>
-
-    <title>Booki</title>
+    <title>Ohmyfood</title>
   </head>
   <body>
-    <main class="container">
-      <!-- Header box -->
-      <header class="header">
-        <div class="logo">
-          <picture>
-            <source
-              media="(max-width:992px)"
-              srcset="
-                images/logo/Booki.png
-              "
-            />
-            <img
-            class="logo-img"
-            src="images/logo/Booki@3x.png"
-            alt="Booki website logo "
-          />
-          </picture>
-          
-        </div>
-        <nav class="header-links">
-          <a href="#anchor-accomodations" class="btn header-link-accomodations">
-            Accommodations</a
-          >
-          <a href="#anchor-activities" class="btn header-link-activities"
-            >Activities
-          </a>
-        </nav>
-      </header>
-      <!-- Searching section -->
-      <section class="search-box">
-        <!-- Search Header -->
-        <div class="searching-text">
-          <h1>Find a place for your dream valcation</h1>
-          <h2>Downtown or in a nature</h2>
-        </div>
+    <!-- Web site header logo and title -->
+    <header class="header">
+      <img
+        src="./public/img/logo/ohmyfood.png"
+        srcset="./public/img/logo/ohmyfood@2x.svg 640w"
+        alt="Ohmyfood logo"
+        class="header__img"
+      />
+    </header>
 
-        <!-- Search form -->
-        <div class="search-container">
-          <i class="search-icon fas fa-map-marker-alt"></i>
-
-          <form action="/action_page.php">
-            <input
-              class="search-form border-removed-input"
-              type="text"
-              placeholder="Marselle,France"
-              name="search"
-            />
-            <button class="search-sub-btn" aria-label="Submit search button" type="submit">Submit</button>
-            <button class="search-btn-icon" aria-label="Submit search button"  type="submit">
-              <i class="fas fa-search fa-lg"></i>
-            </button>
-          </form>
-        </div>
-
-        <!-- Filters -->
-        <div class="filters--box">
-          <p class="filter-text">Filters</p>
-          <div class="border--box low-cost">
-            <i class="filter-icons fas fa-money-bill-wave"></i>
-            <p class="filters--span">Low cost</p>
-          </div>
-          <div class="border--box family-friendly">
-            <i class="filter-icons fas fa-child"></i>
-            <p class="filters--span">Family-friendly</p>
-          </div>
-          <div class="border--box romantic">
-            <i class="filter-icons fas fa-heart"></i>
-            <p class="filters--span">Romantic</p>
-          </div>
-          <div class="border--box pets-allowed">
-            <i class="filter-icons fas fa-dog"></i>
-            <p class="filters--span">Pets allowed</p>
-          </div>
-        </div>
-      </section>
-      <div class="search-info">
-        <i class="search-info--icon fas fa-info"></i>
-        <h2 class="search-info--text"
-          >More then 500 accomodations are available in this <br />
-          city
-        </h2>
+    <div class="site-title">
+      <div class="site-title__icon">
+        <i class="fas fa-map-marker-alt fa-2x"></i>
       </div>
-      <!-- Accommodations in Marsellie  -->
-      <section class="accommodations-box">
-        <div class="accommodations">
-          <div class="accommodations-gallery-title">
-            <!-- <strong>Accommodations in Marseille</strong> -->
-            <a href="#" class="static-links"
-              ><h1 id="anchor-accomodations">Accommodations in Marseille</h1></a
-            >
-          </div>
-          <div class="accommodations-gallery">
-            <!-- Augerge la cannebiere -->
-            <a href="#" class="clickable-link accommodations-gallery-item">
-              <picture>
-                <source
-                  media="(min-width:1600px)"
-                  srcset="
-                    images/hebergements/1_xlarge/marcus-loke-WQJvWU_HZFo-unsplash.jpg
-                  "
-                />
-                <source
-                  media="(min-width:992px)"
-                  srcset="
-                    images/hebergements/2_large/marcus-loke-WQJvWU_HZFo-unsplash.jpg
-                  "
-                />
-                <source
-                  media="(min-width:769px)"
-                  srcset="
-                    images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg
-                  "
-                />
-                <source
-                  media="(max-width:768px)"
-                  srcset="
-                    images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg
-                  "
-                />
-                <img
-                  src="images/hebergements/1_xlarge/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
-                  alt="Room of Augerge la cannebiere hotel"
-                  class="acommodations-imgs"
-                />
-              </picture>
+      <p>Paris,Belleville</p>
+    </div>
 
-              <div class="accommodations-gallery--text">
-                <h2>Augerge la Cannebi&egrave;re</h2>
-                <p>Night starting at <strong>25&euro;</strong></p>
-                <div>
-                  <i class="accommodations-gallery--star fas fa-star"></i>
-                  <i class="accommodations-gallery--star fas fa-star"></i>
-                  <i class="accommodations-gallery--star fas fa-star"></i>
-                  <i class="accommodations-gallery--star fas fa-star"></i>
-                  <i class="accommodations-gallery--nostar fas fa-star"></i>
-                </div>
-              </div>
-            </a>
-            <!-- <div>hotel-du-port</div> -->
-
-            <a href="#" class="clickable-link accommodations-gallery-item">
-              <picture>
-                <source
-                  media="(min-width:1600px)"
-                  srcset="
-                    images/hebergements/1_xlarge/fred-kleber-gTbaxaVLvsg-unsplash.jpg
-                  "
-                />
-                <source
-                  media="(min-width:992px)"
-                  srcset="
-                    images/hebergements/2_large/fred-kleber-gTbaxaVLvsg-unsplash.jpg
-                  "
-                />
-                <source
-                  media="(min-width:769px)"
-                  srcset="
-                    images/hebergements/3_medium/fred-kleber-gTbaxaVLvsg-unsplash.jpg
-                  "
-                />
-                <source
-                  media="(max-width:768px)"
-                  srcset="
-                    images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg
-                  "
-                />
-                <img
-                  src="images/hebergements/1_xlarge/fred-kleber-gTbaxaVLvsg-unsplash.jpg"
-                  alt="room of hotel du port"
-                  class="acommodations-imgs"
-                />
-              </picture>
-
-              <div class="accommodations-gallery--text">
-                <h2>H&ocirc;tel du port</h2>
-                <p>Night starting at <strong>52&euro;</strong></p>
-                <div>
-                  <i class="accommodations-gallery--star fas fa-star"></i>
-                  <i class="accommodations-gallery--star fas fa-star"></i>
-                  <i class="accommodations-gallery--star fas fa-star"></i>
-                  <i class="accommodations-gallery--star fas fa-star"></i>
-                  <i class="accommodations-gallery--star fas fa-star"></i>
-                </div>
-              </div>
-            </a>
-
-            <!-- <div>les-mouettes-hotel</div> -->
-
-            <a href="#" class="clickable-link accommodations-gallery-item">
-              <img
-                src="images/hebergements/1_xlarge/reisetopia-B8WIgxA_PFU-unsplash.jpg"
-                alt="Room of les mouettes hotel"
-                class="acommodations-imgs acommodations-hotel-du-port-img"
-              />
-              <div class="accommodations-gallery--text">
-                <h2>Les mouettes Hotel</h2>
-                <p>Night starting at <strong>76&euro;</strong></p>
-                <div>
-                  <i class="accommodations-gallery--star fas fa-star"></i>
-                  <i class="accommodations-gallery--star fas fa-star"></i>
-                  <i class="accommodations-gallery--star fas fa-star"></i>
-                  <i class="accommodations-gallery--star fas fa-star"></i>
-                  <i class="accommodations-gallery--nostar fas fa-star"></i>
-                </div>
-              </div>
-            </a>
-
-            <!-- <div>hotel-de-la-mer</div> -->
-
-            <a href="#" class="clickable-link accommodations-gallery-item">
-              <picture>
-                <source
-                  media="(min-width:1600px)"
-                  srcset="
-                    images/hebergements/1_xlarge/annie-spratt-Eg1qcIitAuA-unsplash.jpg
-                  "
-                />
-                <source
-                  media="(min-width:992px)"
-                  srcset="
-                    images/hebergements/2_large/annie-spratt-Eg1qcIitAuA-unsplash.jpg
-                  "
-                />
-                <source
-                  media="(min-width:769px)"
-                  srcset="
-                    images/hebergements/3_medium/annie-spratt-Eg1qcIitAuA-unsplash.jpg
-                  "
-                />
-                <source
-                  media="(max-width:768px)"
-                  srcset="
-                    images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg
-                  "
-                />
-                <img
-                  src="images/hebergements/1_xlarge/annie-spratt-Eg1qcIitAuA-unsplash.jpg"
-                  alt="Room of hotel de la mer"
-                  class="acommodations-imgs acommodations-hotel-de-la-mer-img"
-                />
-              </picture>
-
-              <div class="accommodations-gallery--text">
-                <h2>H&ocirc;tel de la mer</h2>
-                <p>Night starting at <strong>46&euro;</strong></p>
-                <div>
-                  <i class="accommodations-gallery--star fas fa-star"></i>
-                  <i class="accommodations-gallery--star fas fa-star"></i>
-                  <i class="accommodations-gallery--star fas fa-star"></i>
-                  <i class="accommodations-gallery--nostar fas fa-star"></i>
-                  <i class="accommodations-gallery--nostar fas fa-star"></i>
-                </div>
-              </div>
-            </a>
-            <!-- <div>auberge-le-panier</div> -->
-
-            <a href="#" class="clickable-link accommodations-gallery-item">
-              <picture>
-                <source
-                  media="(min-width:1600px)"
-                  srcset="
-                    images/hebergements/1_xlarge/nicate-lee-kT-ZyaiwBe0-unsplash.jpg
-                  "
-                />
-                <source
-                  media="(min-width:992px)"
-                  srcset="
-                    images/hebergements/2_large/nicate-lee-kT-ZyaiwBe0-unsplash.jpg
-                  "
-                />
-                <source
-                  media="(min-width:769px)"
-                  srcset="
-                    images/hebergements/3_medium/nicate-lee-kT-ZyaiwBe0-unsplash.jpg
-                  "
-                />
-                <source
-                  media="(max-width:768px)"
-                  srcset="
-                    images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg
-                  "
-                />
-                <img
-                  src="images/hebergements/1_xlarge/nicate-lee-kT-ZyaiwBe0-unsplash.jpg"
-                  alt="Roo of Augerge Le Panier hotel"
-                  class="
-                    acommodations-imgs acommodations--auberge-le-panier-img
-                  "
-                />
-              </picture>
-              <div class="accommodations-gallery--text">
-                <h2>Augerge Le Panier</h2>
-                <p>Night starting at <strong>23&euro;</strong></p>
-                <div>
-                  <i class="accommodations-gallery--star fas fa-star"></i>
-                  <i class="accommodations-gallery--star fas fa-star"></i>
-                  <i class="accommodations-gallery--star fas fa-star"></i>
-                  <i class="accommodations-gallery--star fas fa-star"></i>
-                  <i class="accommodations-gallery--nostar fas fa-star"></i>
-                </div>
-              </div>
-            </a>
-            <!-- <div>hotel-chez-aminna</div> -->
-
-            <a href="#" class="clickable-link accommodations-gallery-item">
-              <picture>
-                <source
-                  media="(min-width:1600px)"
-                  srcset="
-                    images/hebergements/1_xlarge/febrian-zakaria-M6S1WvfW68A-unsplash.jpg
-                  "
-                />
-                <source
-                  media="(min-width:992px)"
-                  srcset="
-                    images/hebergements/2_large/febrian-zakaria-M6S1WvfW68A-unsplash.jpg
-                  "
-                />
-                <source
-                  media="(min-width:769px)"
-                  srcset="
-                    images/hebergements/3_medium/febrian-zakaria-M6S1WvfW68A-unsplash.jpg
-                  "
-                />
-                <source
-                  media="(max-width:768px)"
-                  srcset="
-                    images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg
-                  "
-                />
-                <img
-                  src="images/hebergements/1_xlarge/febrian-zakaria-M6S1WvfW68A-unsplash.jpg"
-                  alt="Room of hotel chez aminna"
-                  class="acommodations-imgs acommodations-hotel-chez-aminna-img"
-                />
-              </picture>
-
-              <div class="accommodations-gallery--text">
-                <h2>H&ocirc;tel chez Amina</h2>
-                <p>Night starting at <strong>96&euro;</strong></p>
-                <div>
-                  <i class="accommodations-gallery--star fas fa-star"></i>
-                  <i class="accommodations-gallery--star fas fa-star"></i>
-                  <i class="accommodations-gallery--star fas fa-star"></i>
-                  <i class="accommodations-gallery--star fas fa-star"></i>
-                  <i class="accommodations-gallery--star fas fa-star"></i>
-                </div>
-              </div>
-            </a>
-            <a href="#" class="accommodations--show-more">
-              <h2>Show more</h2>
-            </a>
+    <nav class="nav_quote">
+      <div>
+        <h1>Book the menu you like</h1>
+      </div>
+      <div >
+        <p class="nav_quote--discover">
+          Discover top-of-the-art restaurants we <br />
+          picked for you
+        </p>
+      </div>
+      <!-- button  -->
+      <button
+        class="btn nav_quote__btn"
+        aria-label="Explore our restaurants search button"
+        type="submit"
+      >
+        Explore our restaurants
+      </button>
+    </nav>
+    <main class="container-main">
+      <!-- how it works section -->
+      <section class="how-it-works">
+        <div class="how-it-works__title">
+          <h1>How it works</h1>
+        </div>
+        <!-- <div class="how-it-works__galery"> -->
+        <div class="how-it-works__items">
+          <p>1</p>
+          <div class="how-it-works__items--group">
+            <i class="fas fa-mobile-alt fa-2x"></i>
+            <p>Chose a restaurants</p>
           </div>
         </div>
-        <!-- End of gallery -->
-
-        <!-- accommodations most popular section -->
-
-        <div class="accommodations-most-popular">
-          <!-- most-popular-title -->
-
-          <div class="most-popular-title">
-            <a href="#" class="static-links"><h1>Most Popular</h1> </a>
-
-            <i class="most-popular-icon fas fa-chart-line fa-lg"></i>
-          </div>
-          <!-- Box of popular hotels -->
-          <div class="most-popular-galery">
-            <a href="#" class="most-popular-items clickable-link">
-              <!-- morning-sun-hotel -->
-              <!-- <div class="most-popular-item"> -->
-              <picture>
-                <source
-                  media="(min-width:1600px)"
-                  srcset="
-                    images/hebergements/1_xlarge/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg
-                  "
-                />
-                <source
-                  media="(min-width:992px)"
-                  srcset="
-                    images/hebergements/2_large/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg
-                  "
-                />
-                <source
-                  media="(min-width:769px)"
-                  srcset="
-                    images/hebergements/3_medium/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg
-                  "
-                />
-                <source
-                  media="(max-width:768px)"
-                  srcset="
-                    images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg
-                  "
-                />
-                <img
-                  src="images/hebergements/1_xlarge/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
-                  alt="Room of morning sun hotel"
-                  class="more-popular-img"
-                />
-              </picture>
-
-              <!-- Most popular descriptions -->
-              <div class="most-popular-details">
-                <h2>Morning Sun Hotel</h2>
-                <p>Night starting at <strong>128&euro;</strong></p>
-                <div class="accommodations-gallery--stars">
-                  <i class="accommodations-gallery--star fas fa-star"></i>
-                  <i class="accommodations-gallery--star fas fa-star"></i>
-                  <i class="accommodations-gallery--star fas fa-star"></i>
-                  <i class="accommodations-gallery--star fas fa-star"></i>
-                  <i class="accommodations-gallery--star fas fa-star"></i>
-                </div>
-                <!-- </div> -->
-                <!-- end of most popular details -->
-              </div>
-            </a>
-            <!-- end of morning-sun-hotel -->
-
-            <!-- au-coeur de l'eau bed and breakfast -->
-            <a href="#" class="clickable-link most-popular-items">
-              <!-- <div class="most-popular-item"> -->
-              <picture>
-                <source
-                  media="(min-width:1600px)"
-                  srcset="
-                    images/hebergements/1_xlarge/aw-creative-VGs8z60yT2c-unsplash.jpg
-                  "
-                />
-                <source
-                  media="(min-width:992px)"
-                  srcset="
-                    images/hebergements/2_large/aw-creative-VGs8z60yT2c-unsplash.jpg
-                  "
-                />
-                <source
-                  media="(min-width:769px)"
-                  srcset="
-                    images/hebergements/3_medium/aw-creative-VGs8z60yT2c-unsplash.jpg
-                  "
-                />
-                <source
-                  media="(max-width:768px)"
-                  srcset="
-                    images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg
-                  "
-                />
-                <img
-                  src="images/hebergements/1_xlarge/aw-creative-VGs8z60yT2c-unsplash.jpg"
-                  alt="Room of Au c&oelig;ur de l'eau Bed and Breakfast hotel"
-                  class="more-popular-img"
-                />
-              </picture>
-
-              <!-- Most popular descriptions -->
-              <div class="most-popular-details">
-                <h2>Au c&oelig;ur de l'eau Bed <br />and Breakfast</h2>
-                <p>Night starting at <strong>71&euro;</strong></p>
-                <div class="accommodations-gallery--stars">
-                  <i class="accommodations-gallery--star fas fa-star"></i>
-                  <i class="accommodations-gallery--star fas fa-star"></i>
-                  <i class="accommodations-gallery--star fas fa-star"></i>
-                  <i class="accommodations-gallery--star fas fa-star"></i>
-                  <i class="accommodations-gallery--nostar fas fa-star"></i>
-                </div>
-              </div>
-              <!-- end of most popular details -->
-              <!-- </div> -->
-            </a>
-            <!-- end of au-coeur de l'eau bed and breakfast  -->
-
-            <!-- tout-bleu-et-blanc-hotel -->
-            <a href="#" class="clickable-link most-popular-items">
-              <!-- <div class="most-popular-item"> -->
-              <picture>
-                <source
-                  media="(min-width:1600px)"
-                  srcset="
-                    images/hebergements/1_xlarge/febrian-zakaria-sjvU0THccQA-unsplash.jpg
-                  "
-                />
-                <source
-                  media="(min-width:992px)"
-                  srcset="
-                    images/hebergements/2_large/febrian-zakaria-sjvU0THccQA-unsplash.jpg
-                  "
-                />
-                <source
-                  media="(min-width:769px)"
-                  srcset="
-                    images/hebergements/3_medium/febrian-zakaria-sjvU0THccQA-unsplash.jpg
-                  "
-                />
-                <source
-                  media="(max-width:768px)"
-                  srcset="
-                    images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg
-                  "
-                />
-                <img
-                  src="images/hebergements/1_xlarge/febrian-zakaria-sjvU0THccQA-unsplash.jpg"
-                  alt="Room of Tout bleu et Blanc Hotel"
-                  class="more-popular-img"
-                />
-              </picture>
-
-              <!-- Most popular descriptions -->
-              <div class="most-popular-details">
-                <h2>
-                  Tout bleu et Blanc <br />
-                  Hotel
-                </h2>
-                <p>Night starting at <strong>68&euro;</strong></p>
-                <div class="accommodations-gallery--stars">
-                  <i class="accommodations-gallery--star fas fa-star"></i>
-                  <i class="accommodations-gallery--star fas fa-star"></i>
-                  <i class="accommodations-gallery--star fas fa-star"></i>
-                  <i class="accommodations-gallery--star fas fa-star"></i>
-                  <i class="accommodations-gallery--nostar fas fa-star"></i>
-                </div>
-                <!-- </div> -->
-                <!-- end of most popular details -->
-              </div>
-            </a>
-            <!-- end of tout-bleu-et-blanc-hotel -->
+        <div class="how-it-works__items">
+          <p>2</p>
+          <div class="how-it-works__items--group">
+            <i class="fas fa-list fa-2x"></i>
+            <p>Create your menu</p>
           </div>
         </div>
-
-        <!-- end of most of popular hotels box -->
+        <div class="how-it-works__items">
+          <p>3</p>
+          <div class="how-it-works__items--group">
+            <i class="fas--color fas fa-store fa-2x"></i>
+            <p>Go enjoy it at the restaurants</p>
+          </div>
+        </div>
         <!-- </div> -->
-        <!-- accommodations-most-popular end-->
       </section>
+      <!-- Restaurants sections -->
+      <section class="restaurants">
+        <h1 class="restaurants__title title--padding">Restaurants</h1>
+        <div class="restaurants__galery">
+          <!-- first restaurants -->
+          <div class="restaurants__galery__item">
+            <a href="/menu-01.html" target="_blank">
+              <img
+                src="./public/img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
+                alt="The full palette from New York restaurants"
+                class="restaurants__img"
+              />
+            </a>
+            <div class="restaurants__galery__txt">
+              <div>
+                <h1>The Full Palette</h1>
+                <p class="restaurants__galery__txt--p">New York</p>
+              </div>
+              <div class="restaurants__galery__icon">
+                <i class="far fa-heart fa-2x"></i>
+              </div>
+              <!-- end of icon -->
+              <div class="card__new">
+                <p>New</p>
+              </div>
+            </div>
+            <!-- end of txt -->
+          </div>
+          <!-- end of item -->
 
-      <!-- Activities in Marseille section -->
-      <section class="activities-in-marseille-section">
-        <div class="activities-in-marseille-title">
-          <a href="#" class="static-links"
-            ><h1 id="anchor-activities">Activities in Marseille</h1></a
-          >
+          <!-- 2nd restaurants -->
+          <div class="restaurants__galery__item">
+            <a href="/menu-02.html">
+              <img
+                src="./public/img/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg"
+                alt="The palatte full of food"
+                class="restaurants__img"
+              />
+            </a>
+            <div class="restaurants__galery__txt">
+              <div>
+                <h1>The Enchanted Plate</h1>
+                <p class="restaurants__galery__txt--p">New York</p>
+              </div>
+              <div class="restaurants__galery__icon">
+                <i class="far fa-heart fa-2x"></i>
+              </div>
+              <!-- end of icon -->
+              <div class="card__new">
+                <p>New</p>
+              </div>
+            </div>
+            <!-- end of txt -->
+          </div>
+          <!-- end of item -->
+
+          <!-- 3rd restaurant -->
+          <div class="restaurants__galery__item">
+            <a href="/menu-03.html">
+              <img
+                src="./public/img/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
+                alt="The palatte full of food"
+                class="restaurants__img"
+              />
+            </a>
+            <div class="restaurants__galery__txt">
+              <div>
+                <h1>Bastille</h1>
+                <p class="restaurants__galery__txt--p">New York</p>
+              </div>
+              <div class="restaurants__galery__icon">
+                <i class="far fa-heart fa-2x"></i>
+              </div>
+              <!-- end of icon -->
+            </div>
+            <!-- end of txt -->
+          </div>
+          <!-- end of item -->
+
+          <!-- 4th restaurant -->
+          <div class="restaurants__galery__item">
+            <a href="/menu-04.html">
+              <img
+                src="./public/img/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
+                alt="The palatte full of food"
+                class="restaurants__img"
+              />
+            </a>
+            <div class="restaurants__galery__txt">
+              <div>
+                <h1>Le Gourmand</h1>
+                <p class="restaurants__galery__txt--p">New York</p>
+              </div>
+              <div class="restaurants__galery__icon">
+                <i class="far fa-heart fa-2x"></i>
+              </div>
+              <!-- end of icon -->
+            </div>
+            <!-- end of txt -->
+          </div>
+          <!-- end of item -->
         </div>
-
-        <div class="activities-in-marseille-gallery">
-          <a
-            href="#"
-            class="clickable-activities-links clickable-link--old-port"
-          >
-            <div class="activites-img-box">
-              <picture>
-                <source
-                  media="(min-width:1600px)"
-                  srcset="
-                    images/activites/1_xlarge/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg
-                  "
-                />
-                <source
-                  media="(min-width:992px)"
-                  srcset="
-                    images/activites/2_large/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg
-                  "
-                />
-                <source
-                  media="(min-width:769px)"
-                  srcset="
-                    images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg
-                  "
-                />
-                <source
-                  media="(max-width:768px)"
-                  srcset="
-                    images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg
-                  "
-                />
-                <img
-                  src="images/activites/1_xlarge/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
-                  alt="Old port "
-                  class="img-box"
-                />
-              </picture>
-            </div>
-
-            <div class="activities-galery-name">
-              <h2>Old Port</h2>
-            </div>
-          </a>
-          <a
-            href="#"
-            class="clickable-link--pomegues-fort clickable-activities-links"
-          >
-            <div class="activites-img-box">
-              <picture>
-                <source
-                  media="(min-width:1600px)"
-                  srcset="
-                    images/activites/1_xlarge/paul-hermann-QFTrLdQIRhI-unsplash.jpg
-                  "
-                />
-                <source
-                  media="(min-width:992px)"
-                  srcset="
-                    images/activites/2_large/paul-hermann-QFTrLdQIRhI-unsplash.jpg
-                  "
-                />
-                <source
-                  media="(min-width:769px)"
-                  srcset="
-                    images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg
-                  "
-                />
-                <source
-                  media="(max-width:768px)"
-                  srcset="
-                    images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg
-                  "
-                />
-                <img
-                  src="images/activites/1_xlarge/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
-                  alt="Pomegues Fort"
-                  class="img-box"
-                />
-              </picture>
-            </div>
-
-            <div class="activities-galery-name">
-              <h2>Pom&egrave;gues Fort</h2>
-            </div>
-          </a>
-          <a
-            href="#"
-            class="clickable-activities-links clickable-link--frioul-island"
-          >
-            <div class="activites-img-box">
-              <picture>
-                <source
-                  media="(min-width:1600px)"
-                  srcset="
-                    images/activites/1_xlarge/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg
-                  "
-                />
-                <source
-                  media="(min-width:992px)"
-                  srcset="
-                    images/activites/2_large/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg
-                  "
-                />
-                <source
-                  media="(min-width:769px)"
-                  srcset="
-                    images/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg
-                  "
-                />
-                <source
-                  media="(max-width:768px)"
-                  srcset="
-                    images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg
-                  "
-                />
-                <img
-                  src="images/activites/1_xlarge/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"
-                  alt="Frioul Island"
-                  class="img-box"
-                />
-              </picture>
-            </div>
-            <div class="activities-galery-name">
-              <h2>Frioul Island</h2>
-            </div>
-          </a>
-
-          <a
-            href="#"
-            class="
-              clickable-activities-links clickable-link-calanques-national-park
-            "
-          >
-            <div class="activites-img-box">
-              <picture>
-                <source
-                  media="(min-width:1600px)"
-                  srcset="
-                    images/activites/1_xlarge/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg
-                  "
-                />
-                <source
-                  media="(min-width:992px)"
-                  srcset="
-                    images/activites/2_large/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg
-                  "
-                />
-                <source
-                  media="(min-width:769px)"
-                  srcset="
-                    images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg
-                  "
-                />
-                <source
-                  media="(max-width:768px)"
-                  srcset="
-                    images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg
-                  "
-                />
-                <img
-                  src="images/activites/1_xlarge/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
-                  alt="Calanques National Park"
-                  class="img-box"
-                />
-              </picture>
-            </div>
-            <div class="activities-galery-name">
-              <h2>Calanques National Park</h2>
-            </div>
-          </a>
-
-          <a
-            href="#"
-            class="
-              clickable-activities-links
-              clickable-link--notre-dame-de-la-garde
-            "
-          >
-            <div class="activites-img-box">
-              <picture>
-                <source
-                  media="(min-width:1600px)"
-                  srcset="
-                    images/activites/1_xlarge/florian-wehde-xW9e8gdotxI-unsplash.jpg
-                  "
-                />
-                <source
-                  media="(min-width:992px)"
-                  srcset="
-                    images/activites/2_large/florian-wehde-xW9e8gdotxI-unsplash.jpg
-                  "
-                />
-                <source
-                  media="(min-width:769px)"
-                  srcset="
-                    images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg
-                  "
-                />
-                <source
-                  media="(max-width:768px)"
-                  srcset="
-                    images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg
-                  "
-                />
-                <img
-                  src="images/activites/1_xlarge/florian-wehde-xW9e8gdotxI-unsplash.jpg"
-                  alt="Notre Dame de la Garde"
-                  class="img-box"
-                />
-              </picture>
-            </div>
-            <div class="activities-galery-name">
-              <h2>Notre-Dame-de-la-Garde</h2>
-            </div>
-          </a>
-
-          <a
-            href="#"
-            class="clickable-activities-links clickable-link--longchamp-park"
-          >
-            <div class="activites-img-box">
-              <picture>
-                <source
-                  media="(min-width:1600px)"
-                  srcset="
-                    images/activites/1_xlarge/lena-paulin-wH2-EJoDcV0-unsplash.jpg
-                  "
-                />
-                <source
-                  media="(min-width:992px)"
-                  srcset="
-                    images/activites/2_large/lena-paulin-wH2-EJoDcV0-unsplash.jpg
-                  "
-                />
-                <source
-                  media="(min-width:769px)"
-                  srcset="
-                    images/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg
-                  "
-                />
-                <source
-                  media="(max-width:768px)"
-                  srcset="
-                    images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg
-                  "
-                />
-                <img
-                  src="images/activites/1_xlarge/lena-paulin-wH2-EJoDcV0-unsplash.jpg"
-                  alt="Longchamp Park"
-                  class="img-box"
-                />
-              </picture>
-            </div>
-            <div class="activities-galery-name">
-              <h2>Longchamp Park</h2>
-            </div>
-          </a>
-        </div>
-        <!-- end of activities-galery -->
+        <!-- end of galery -->
       </section>
-      <!-- </section> end of activities-in-marseille-box -->
     </main>
-    <!-- <FOOTER></FOOTER> -->
     <footer class="footer">
-      <nav class="footer-col">
-        <h2 class="footer-heading">About</h2>
-        <ul class="footer-nav">
-          <li>
-            <a href="#" class="footer-link"><p>Site Map</p></a>
-          </li>
-          <li>
-            <a href="#" class="footer-link"
-              ><p>General Terms and Coditions</p></a
-            >
-          </li>
-          <li>
-            <a href="#" class="footer-link"><p>Data and Privacy</p></a>
-          </li>
-        </ul>
-      </nav>
-      <nav class="footer-col">
-        <h2 class="footer-heading">Our Accomodations</h2>
-        <ul class="footer-nav">
-          <li>
-            <a href="#" class="footer-link"><p>Quality Assessment</p></a>
-          </li>
-          <li>
-            <a href="#" class="footer-link"><p>You have a hotel?</p></a>
-          </li>
-        </ul>
-      </nav>
-      <nav class="footer-col">
-        <h2 class="footer-heading">Assistance</h2>
-        <ul class="footer-nav">
-          <li>
-            <a href="#" class="footer-link"><p>Help Desk</p></a>
-          </li>
-          <li>
-            <a href="#" class="footer-link"><p>Contact Us</p></a>
-          </li>
-        </ul>
-      </nav>
+      <div><h2 class="footer__name">ohmyfood</h2></div>
+      <div class="footer__flex">
+        <i class="fas fa-fw fa-utensils fa-lg"></i>
+        <p>Suggest a restaurant</p>
+      </div>
+      <div class="footer__flex">
+        <i class="fas fa-fw fa-hands-helping fa-lg"></i>
+        <p>Become a partner</p>
+      </div>
+      <div class="footer__legal"><p>Legal</p></div>
+      <div class="footer__contact"><p>Contact</p></div>
     </footer>
   </body>
 </html>
-<!-- <picture>
-  <source media="(min-width:1600px)" srcset="images/activites/1_xlarge/">
-  <source media="(min-width:992px)"srcset="images/activites/2_large/">
-  <source media="(min-width:769px)"srcset="images/activites/3_medium/">
-  <source media="(max-width:768px)"srcset="images/activites/4_small/">
-</picture> -->
